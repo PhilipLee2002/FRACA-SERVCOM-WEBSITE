@@ -1,0 +1,63 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDEs / editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.bak
+
+# Node (if you add tooling later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+env/
+
+# Build / output
+dist/
+build/
+.cache/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Images — OPTIONAL
+# Uncomment the following line if you keep large original photos locally and don't want them in the repo
+# IMAGES/originals/
+# IMAGES/raw/
+
+# Git LFS note
+# If your IMAGES/ folder contains lots of large photos, consider using Git LFS:
+#   git lfs install
+#   git lfs track "IMAGES/**"
+
+# Misc
+*.tmp
+*.temp
+
+# Windows thumbnail cache
+Thumbs.db

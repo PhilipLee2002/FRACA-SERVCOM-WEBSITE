@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraca Servcom - Filing Cabinets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-white font-sans">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-600">Fraca Servcom</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 hover:text-red-600 font-medium">Home</a>
+                <a href="furniture.html" class="text-red-600 font-semibold">Furniture</a>
+                <a href="index.html#contact" class="text-gray-800 hover:text-red-600 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-gray-100 wood-bg">
+        <div class="container mx-auto px-4 py-16 md:py-24 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Filing Cabinets</h1>
+            <p class="text-gray-700">Secure storage solutions for files and documents.</p>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <template id="img-card-template">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer">
+                        <img class="w-full h-56 object-contain bg-gray-50" alt="Filing cabinet image">
+                    </div>
+                </template>
+            </div>
+            <p id="empty-note" class="text-center text-gray-600 mt-6">Images coming soon.</p>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center p-4">
+        <button id="lightbox-close" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2" title="Close">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <img id="lightbox-img" class="max-h-[85vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" alt="Preview">
+    </div>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> Fraca Servcom Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const images = [
+        ];
+
+        const grid = document.querySelector('.grid');
+        const tpl = document.getElementById('img-card-template');
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbClose = document.getElementById('lightbox-close');
+        const emptyNote = document.getElementById('empty-note');
+
+        if (images.length === 0) emptyNote.classList.remove('hidden');
+
+        images.forEach(src => {
+            const node = tpl.content.firstElementChild.cloneNode(true);
+            const img = node.querySelector('img');
+            img.src = src;
+            img.addEventListener('click', () => {
+                lbImg.src = src;
+                lb.classList.remove('hidden');
+                lb.classList.add('flex');
+            });
+            grid.appendChild(node);
+        });
+
+        lbClose.addEventListener('click', () => {
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            lbImg.src = '';
+        });
+        lb.addEventListener('click', (e) => {
+            if (e.target === lb) {
+                lb.classList.add('hidden');
+                lb.classList.remove('flex');
+                lbImg.src = '';
+            }
+        });
+    </script>
+</body>
+</html>
+

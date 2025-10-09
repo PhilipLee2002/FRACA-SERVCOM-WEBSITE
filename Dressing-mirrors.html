@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraca Servcom - Dressing Mirrors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #dc2626;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        
+        .product-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #dc2626;
+            border-radius: 2px;
+        }
+        
+        .wood-bg {
+            background-image: url('https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .wood-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
+        }
+        
+        .lightbox {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #dc2626;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .breadcrumb-item:not(:last-child)::after {
+            content: '/';
+            margin: 0 8px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Floating Back Button -->
+    <a href="furniture.html" class="fixed z-40 bottom-6 right-6 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all hover:scale-110" aria-label="Back to Furniture">
+        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+    </a>
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-600 flex items-center">
+                <i data-lucide="home" class="w-6 h-6 mr-2"></i>
+                Fraca Servcom
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-800 hover:text-red-600 font-medium">Home</a>
+                <a href="furniture.html" class="nav-link text-red-600 font-semibold">Furniture</a>
+                <a href="index.html#contact" class="nav-link text-gray-800 hover:text-red-600 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative wood-bg h-96 flex items-center justify-center">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 slide-up">Dressing Mirrors</h1>
+            <p class="text-xl text-gray-100 opacity-90 font-light max-w-2xl mx-auto">Elegant mirrors for every bedroom and dressing area</p>
+        </div>
+    </header>
+
+    <nav class="bg-gray-50 border-t border-b border-gray-200 py-3">
+        <div class="container mx-auto px-4">
+            <ol class="flex items-center text-sm">
+                <li class="breadcrumb-item"><a href="index.html" class="text-gray-600 hover:text-red-600 transition">Home</a></li>
+                <li class="breadcrumb-item"><a href="furniture.html" class="text-gray-600 hover:text-red-600 transition">Furniture</a></li>
+                <li class="breadcrumb-item text-gray-900 font-medium">Dressing Mirrors</li>
+            </ol>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Dressing Mirror Collection -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="section-title text-3xl font-bold text-gray-900 mb-4">Dressing Mirror Collection</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Discover our elegant collection of dressing mirrors featuring various styles, sizes, and finishes perfect for bedrooms, dressing rooms, and personal spaces.</p>
+                </div>
+                <div id="dressing-mirror-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 reveal">
+                    <!-- Cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4 lightbox transition-opacity duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-red-400 transition" title="Close (Esc)">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <div class="relative max-w-6xl w-full">
+            <img id="lightbox-img" class="w-full max-h-[85vh] object-contain rounded" alt="Dressing Mirror Preview">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 transition-opacity duration-300" id="lightbox-caption">
+                <p class="text-center text-sm md:text-base"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <a href="index.html" class="text-2xl font-bold text-red-600 inline-block mb-6">Fraca Servcom</a>
+                <p class="text-gray-400 max-w-2xl mx-auto">Premium dressing mirrors designed to enhance your daily routine with style and functionality.</p>
+                <p class="mt-8 text-gray-500 text-sm">&copy; <span id="current-year"></span> Fraca Servcom Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Enhanced dressing mirror data with titles and descriptions
+        const dressingMirrorData = [
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/DM-41.JPG',
+                title: 'Classic Dressing Mirror',
+                desc: 'Traditional styling with wooden frame'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/DM-42.JPG',
+                title: 'Modern Wall Mirror',
+                desc: 'Contemporary design with clean lines'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/DM-44.JPG',
+                title: 'Elegant Full-Length Mirror',
+                desc: 'Perfect for complete outfit viewing'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/DM-50.JPG',
+                title: 'Premium Dressing Mirror',
+                desc: 'High-quality glass with stylish frame'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/DM-53.JPG',
+                title: 'Contemporary Mirror Design',
+                desc: 'Modern appeal with practical functionality'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/DM-54.jpg',
+                title: 'Stylish Bedroom Mirror',
+                desc: 'Perfect addition to any bedroom decor'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/DM-55.JPG',
+                title: 'Luxury Dressing Mirror',
+                desc: 'Premium materials and elegant finish'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/fym-721-with-mirror-dresser-500x500[1].jpg',
+                title: 'Mirror Dresser Combination',
+                desc: 'Complete dressing solution with storage'
+            },
+            { 
+                src: 'IMAGES/DRESSING MIRRORS/LBO44-Photoroom (95).png',
+                title: 'Designer Dressing Mirror',
+                desc: 'Unique styling for distinctive bedrooms'
+            }
+        ];
+
+        // Function to create product card
+        function createProductCard(item) {
+            const card = document.createElement('div');
+            card.className = 'product-card bg-white rounded-lg overflow-hidden h-full flex flex-col';
+            card.innerHTML = `
+                <div class="relative overflow-hidden h-64">
+                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="${item.src}" alt="${item.title}" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300"></div>
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h3 class="font-semibold text-lg text-gray-800 mb-1">${item.title}</h3>
+                    <p class="text-gray-600 text-sm mb-3">${item.desc}</p>
+                    <div class="mt-auto flex justify-between items-center">
+                        <span class="text-xs text-gray-500">Dressing Mirror</span>
+                        <button class="text-red-600 hover:text-red-800 transition">
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            card.querySelector('img').addEventListener('click', () => {
+                openLightbox(item.src, `${item.title} - ${item.desc}`);
+            });
+            
+            return card;
+        }
+
+        // Populate gallery
+        function populateGallery() {
+            const container = document.getElementById('dressing-mirror-gallery');
+            dressingMirrorData.forEach(item => {
+                container.appendChild(createProductCard(item));
+            });
+        }
+
+        // Enhanced lightbox functionality
+        function openLightbox(src, caption = '') {
+            const lb = document.getElementById('lightbox');
+            const lbImg = document.getElementById('lightbox-img');
+            const lbCaption = document.getElementById('lightbox-caption');
+            
+            lbImg.src = src;
+            lbCaption.querySelector('p').textContent = caption;
+            
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Show caption after a delay if provided
+            if (caption) {
+                setTimeout(() => {
+                    lbCaption.style.opacity = '1';
+                }, 300);
+            }
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            const lbCaption = document.getElementById('lightbox-caption');
+            
+            lb.classList.remove('active');
+            document.body.style.overflow = '';
+            lbCaption.style.opacity = '0';
+        }
+
+        // Event listeners
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('lightbox')) {
+                closeLightbox();
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const animateOnScroll = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            reveals.forEach(reveal => observer.observe(reveal));
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            populateGallery();
+            animateOnScroll();
+        });
+    </script>
+</body>
+</html>

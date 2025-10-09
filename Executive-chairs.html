@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraca Servcom - Executive Chairs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .reveal { opacity: 0; transform: translateY(8px); transition: opacity .6s ease, transform .6s ease; }
+        .reveal.show { opacity: 1; transform: translateY(0); }
+        
+        .product-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #dc2626;
+        }
+        
+        .wood-bg {
+            background-image: url('https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-600">Fraca Servcom</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-800 hover:text-red-600 font-medium">Home</a>
+                <a href="furniture.html" class="text-red-600 font-semibold">Furniture</a>
+                <a href="index.html#contact" class="text-gray-800 hover:text-red-600 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative wood-bg">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-4 py-16 md:py-24 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Executive Chairs</h1>
+            <p class="text-gray-100">Explore our range of executive chairs.</p>
+        </div>
+    </section>
+
+    <nav class="bg-gray-50 border-t border-b border-gray-200" aria-label="Breadcrumb">
+        <div class="container mx-auto px-4 py-3 text-sm">
+            <ol class="flex items-center text-gray-600 space-x-2">
+                <li><a href="index.html" class="hover:text-red-600" aria-label="Home">Home</a></li>
+                <li class="text-gray-400">/</li>
+                <li><a href="furniture.html" class="hover:text-red-600" aria-label="Furniture">Furniture</a></li>
+                <li class="text-gray-400">/</li>
+                <li class="text-gray-900" aria-current="page">Executive Chairs</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Senior Executive High Back Chairs -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-3xl font-bold text-gray-900 mb-4">Senior Executive High Back Chairs</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Premium executive chairs designed for maximum comfort and support. Perfect for senior management and executives who spend long hours at their desks.</p>
+            </div>
+            <div id="senior-chairs" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 reveal">
+                <template id="senior-card-template">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer product-card">
+                        <img class="w-full h-56 object-cover" alt="Senior Executive chair">
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orthopedic High Back Chairs -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-3xl font-bold text-gray-900 mb-4">Orthopedic High Back Chairs</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Ergonomically designed chairs with enhanced lumbar support and adjustable features to promote healthy posture and reduce back strain.</p>
+            </div>
+            <div id="orthopedic-chairs" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 reveal">
+                <template id="orthopedic-card-template">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer product-card">
+                        <img class="w-full h-56 object-cover" alt="Orthopedic chair">
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Back Chairs -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-3xl font-bold text-gray-900 mb-4">Mid Back Chairs</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Versatile mid-back chairs offering the perfect balance of comfort and mobility. Ideal for general office use and meeting rooms.</p>
+            </div>
+            <div id="mid-back-chairs" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 reveal">
+                <template id="mid-back-card-template">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer product-card">
+                        <img class="w-full h-56 object-cover" alt="Mid back chair">
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <!-- Low Back Chairs -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title text-3xl font-bold text-gray-900 mb-4">Low Back Chairs</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Lightweight and compact low-back chairs perfect for reception areas, conference rooms, and spaces requiring easy mobility.</p>
+            </div>
+            <div id="low-back-chairs" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 reveal">
+                <template id="low-back-card-template">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 cursor-pointer product-card">
+                        <img class="w-full h-56 object-cover" alt="Low back chair">
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center p-4">
+        <button id="lightbox-close" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2" title="Close">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <img id="lightbox-img" class="max-h-[85vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" alt="Preview">
+    </div>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> Fraca Servcom Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Organize images by category
+        const chairCategories = {
+            senior: [
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/++.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/+9.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.0.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.10.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.13.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.17.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.2.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.20.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.21.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.26.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.28.png',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.33.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.4.jpg',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.9.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2..png',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.32.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.39.jpg',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.43.jpg',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.44.jpg',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/3.10.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/LBO44-Photoroom (36).png',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (38).png',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (59).png',
+                'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (60).png'
+            ],
+            orthopedic: [
+                'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (26).png',
+                'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (28).png',
+                'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (37).png',
+                'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (41).png',
+                'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (62).png'
+            ],
+            midBack: [
+                'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/1.16.JPG',
+                'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/LBO44-Photoroom (48).png',
+                'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/white-Photoroom (50).png',
+                'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/white-Photoroom (52).png'
+            ],
+            lowBack: [
+                'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (58).png',
+                'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (59).png',
+                'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (60).png',
+                'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (61).png'
+            ]
+        };
+
+        // Function to populate a category section
+        function populateCategory(categoryId, templateId, images) {
+            const grid = document.getElementById(categoryId);
+            const template = document.getElementById(templateId);
+            
+            if (!grid || !template || images.length === 0) return;
+
+            images.forEach(src => {
+                const node = template.content.firstElementChild.cloneNode(true);
+                const img = node.querySelector('img');
+                img.src = src;
+                img.addEventListener('click', () => {
+                    openLightbox(src);
+                });
+                grid.appendChild(node);
+            });
+        }
+
+        // Function to open lightbox
+        function openLightbox(src) {
+            const lb = document.getElementById('lightbox');
+            const lbImg = document.getElementById('lightbox-img');
+            lbImg.src = src;
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+        }
+
+        // Populate all categories
+        populateCategory('senior-chairs', 'senior-card-template', chairCategories.senior);
+        populateCategory('orthopedic-chairs', 'orthopedic-card-template', chairCategories.orthopedic);
+        populateCategory('mid-back-chairs', 'mid-back-card-template', chairCategories.midBack);
+        populateCategory('low-back-chairs', 'low-back-card-template', chairCategories.lowBack);
+
+        // Lightbox functionality
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbClose = document.getElementById('lightbox-close');
+
+        lbClose.addEventListener('click', () => {
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            lbImg.src = '';
+        });
+
+        lb.addEventListener('click', (e) => {
+            if (e.target === lb) {
+                lb.classList.add('hidden');
+                lb.classList.remove('flex');
+                lbImg.src = '';
+            }
+        });
+
+        // Reveal on scroll
+        const revealEls = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('show');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
+

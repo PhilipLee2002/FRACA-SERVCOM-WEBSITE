@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Modern Gallery Styles */
+.wood-bg {
+    background-image: url('https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.reveal { 
+    opacity: 0; 
+    transform: translateY(8px); 
+    transition: opacity .6s ease, transform .6s ease; 
+}
+.reveal.show { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.product-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #dc2626;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.map-frame {
+    border: 0;
+}
