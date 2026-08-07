@@ -16,27 +16,7 @@ Fraca Servcom Ltd — A responsive static website showcasing furniture, hardware
 - Accessibility improvements: descriptive `title` attributes for icon-only controls and `iframe`, alt text on images, keyboard-accessible navigation.
 - Styling via Tailwind CDN and a small `style.css` for custom styles.
 
-## Project structure (representative)
 
-# Fraca Servcom Ltd — Static Website
-
-A responsive, static website for Fraca Servcom Ltd showcasing furniture, hardware and general supplies. Built with plain HTML, Tailwind (via CDN) and a small custom stylesheet. The site includes product galleries, contact and feedback forms (static), an embedded Google Map, and responsive navigation.
-
-## Short repository description (for GitHub)
-
-Fraca Servcom Ltd — A responsive static website showcasing furniture, hardware and supplies with product galleries, contact forms, and responsive navigation. Built with Tailwind CSS and a small custom stylesheet.
-
-## Features
-
-- Responsive landing page (`index.html`) with hero, product categories, testimonials and CTA.
-- Product pages and galleries (e.g., `FURNITURE.html`, `HARDWARE.html`, `Executive-chairs.html`, plus many product-specific pages).
-- Local image assets located under `IMAGES/` (product photos referenced from pages).
-- Contact and feedback forms (static markup; no backend integration included).
-- Embedded Google Maps iframe for office location.
-- Accessibility improvements: descriptive `title` attributes for icon-only controls and `iframe`, alt text on images, keyboard-accessible navigation.
-- Styling via Tailwind CDN and a small `style.css` for custom styles.
-
-## Project structure (representative)
 
 ```
 index.html
