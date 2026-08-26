@@ -1,369 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fraca Servcom - Executive Tables</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-        
-        .reveal {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        
-        .reveal.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .product-card {
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-        }
-        
-        .product-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: #dc2626;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.4s ease;
-        }
-        
-        .product-card:hover::before {
-            transform: scaleX(1);
-        }
-        
-        .section-title {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 8px;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: #dc2626;
-            border-radius: 2px;
-        }
-        
-        .wood-bg {
-            background-image: url('https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
-        }
-        
-        .wood-bg::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
-        }
-        
-        .lightbox {
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .lightbox.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #dc2626;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .breadcrumb-item:not(:last-child)::after {
-            content: '/';
-            margin: 0 8px;
-            color: #9ca3af;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Executive tables from Fraca Servcom Ltd — inquire for availability.">
+  <title>Fraca Servcom — Executive Tables</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@0.460.0"></script>
+  <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-white">
-    <!-- Floating Back Button -->
-    <a href="furniture.html" class="fixed z-40 bottom-6 right-6 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition-all hover:scale-110" aria-label="Back to Furniture">
-        <i data-lucide="arrow-left" class="w-5 h-5"></i>
-    </a>
-
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-red-600 flex items-center">
-                <i data-lucide="home" class="w-6 h-6 mr-2"></i>
-                Fraca Servcom
-            </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="nav-link text-gray-800 hover:text-red-600 font-medium">Home</a>
-                <a href="furniture.html" class="nav-link text-red-600 font-semibold">Furniture</a>
-                <a href="index.html#contact" class="nav-link text-gray-800 hover:text-red-600 font-medium">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="relative wood-bg h-96 flex items-center justify-center">
-        <div class="relative z-10 text-center px-4">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 slide-up">Executive Tables</h1>
-            <p class="text-xl text-gray-100 opacity-90 font-light max-w-2xl mx-auto">Premium executive furniture for leadership and professional environments</p>
-        </div>
-    </header>
-
-    <nav class="bg-gray-50 border-t border-b border-gray-200 py-3">
-        <div class="container mx-auto px-4">
-            <ol class="flex items-center text-sm">
-                <li class="breadcrumb-item"><a href="index.html" class="text-gray-600 hover:text-red-600 transition">Home</a></li>
-                <li class="breadcrumb-item"><a href="furniture.html" class="text-gray-600 hover:text-red-600 transition">Furniture</a></li>
-                <li class="breadcrumb-item text-gray-900 font-medium">Executive Tables</li>
-            </ol>
-        </div>
-    </nav>
-
-    <main>
-        <!-- Executive Table Collection -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-16 reveal">
-                    <h2 class="section-title text-3xl font-bold text-gray-900 mb-4">Executive Table Collection</h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">Discover our premium collection of executive tables designed for corporate offices, boardrooms, and executive suites. Each piece combines functionality with sophisticated design.</p>
-                </div>
-                <div id="executive-table-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 reveal">
-                    <!-- Cards will be populated by JavaScript -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4 lightbox transition-opacity duration-300">
-        <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-red-400 transition" title="Close (Esc)">
-            <i data-lucide="x" class="w-8 h-8"></i>
-        </button>
-        <div class="relative max-w-6xl w-full">
-            <img id="lightbox-img" class="w-full max-h-[85vh] object-contain rounded" alt="Executive Table Preview">
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white opacity-0 transition-opacity duration-300" id="lightbox-caption">
-                <p class="text-center text-sm md:text-base"></p>
-            </div>
-        </div>
+<body>
+  <a href="furniture.html" class="fab-back" aria-label="Back to Furniture"><i data-lucide="arrow-left" class="w-5 h-5"></i></a>
+  <header class="site-header">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="brand">Fraca Servcom</a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="furniture.html" class="nav-link is-active">Products</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/254725151495" class="btn btn-whatsapp py-2 px-4 text-sm"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
+      </nav>
+      <button type="button" class="md:hidden" id="menu-toggle" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu" class="w-6 h-6 text-stone-800"></i></button>
     </div>
-
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <a href="index.html" class="text-2xl font-bold text-red-600 inline-block mb-6">Fraca Servcom</a>
-                <p class="text-gray-400 max-w-2xl mx-auto">Premium executive tables designed to command respect and enhance productivity in professional environments.</p>
-                <p class="mt-8 text-gray-500 text-sm">&copy; <span id="current-year"></span> Fraca Servcom Ltd. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        lucide.createIcons();
-        
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Enhanced executive table data with titles and descriptions
-        const executiveTableData = [
-            { 
-                src: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Executive Boardroom Table',
-                desc: 'Premium mahogany finish with leather inlays'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Modern Executive Desk',
-                desc: 'Contemporary design with built-in storage'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Luxury Executive Table',
-                desc: 'Handcrafted with premium materials'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Corporate Board Table',
-                desc: 'Professional styling for executive meetings'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Contemporary Executive Desk',
-                desc: 'Sleek design with modern functionality'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Premium Office Table',
-                desc: 'High-end construction for executive use'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Executive Conference Table',
-                desc: 'Large format for board meetings and presentations'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Modern Boardroom Table',
-                desc: 'Contemporary styling with premium finish'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Luxury Executive Furniture',
-                desc: 'Complete executive suite furniture'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Professional Executive Table',
-                desc: 'Designed for corporate leadership'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Contemporary Office Table',
-                desc: 'Modern design for executive offices'
-            },
-            { 
-                src: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                title: 'Premium Executive Desk',
-                desc: 'Luxury materials and superior craftsmanship'
-            }
-        ];
-
-        // Function to create product card
-        function createProductCard(item) {
-            const card = document.createElement('div');
-            card.className = 'product-card bg-white rounded-lg overflow-hidden h-full flex flex-col';
-            card.innerHTML = `
-                <div class="relative overflow-hidden h-64">
-                    <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="${item.src}" alt="${item.title}" loading="lazy">
-                    <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300"></div>
-                </div>
-                <div class="p-4 flex-grow flex flex-col">
-                    <h3 class="font-semibold text-lg text-gray-800 mb-1">${item.title}</h3>
-                    <p class="text-gray-600 text-sm mb-3">${item.desc}</p>
-                    <div class="mt-auto flex justify-between items-center">
-                        <span class="text-xs text-gray-500">Executive Table</span>
-                        <button class="text-red-600 hover:text-red-800 transition">
-                            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-            `;
-            
-            card.querySelector('img').addEventListener('click', () => {
-                openLightbox(item.src, `${item.title} - ${item.desc}`);
-            });
-            
-            return card;
-        }
-
-        // Populate gallery
-        function populateGallery() {
-            const container = document.getElementById('executive-table-gallery');
-            executiveTableData.forEach(item => {
-                container.appendChild(createProductCard(item));
-            });
-        }
-
-        // Enhanced lightbox functionality
-        function openLightbox(src, caption = '') {
-            const lb = document.getElementById('lightbox');
-            const lbImg = document.getElementById('lightbox-img');
-            const lbCaption = document.getElementById('lightbox-caption');
-            
-            lbImg.src = src;
-            lbCaption.querySelector('p').textContent = caption;
-            
-            lb.classList.add('active');
-            document.body.style.overflow = 'hidden';
-            
-            // Show caption after a delay if provided
-            if (caption) {
-                setTimeout(() => {
-                    lbCaption.style.opacity = '1';
-                }, 300);
-            }
-        }
-
-        function closeLightbox() {
-            const lb = document.getElementById('lightbox');
-            const lbCaption = document.getElementById('lightbox-caption');
-            
-            lb.classList.remove('active');
-            document.body.style.overflow = '';
-            lbCaption.style.opacity = '0';
-        }
-
-        // Event listeners
-        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox();
-        });
-        document.getElementById('lightbox').addEventListener('click', (e) => {
-            if (e.target === document.getElementById('lightbox')) {
-                closeLightbox();
-            }
-        });
-
-        // Intersection Observer for scroll animations
-        const animateOnScroll = () => {
-            const reveals = document.querySelectorAll('.reveal');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            reveals.forEach(reveal => observer.observe(reveal));
-        };
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            populateGallery();
-            animateOnScroll();
-        });
-    </script>
+    <div class="md:hidden hidden border-t border-stone-200 bg-white px-4 py-2" id="mobile-menu">
+      <a href="index.html" class="block py-3 border-b border-stone-100">Home</a>
+      <a href="index.html#about" class="block py-3 border-b border-stone-100">About</a>
+      <a href="furniture.html" class="block py-3 border-b border-stone-100 text-red-600 font-semibold">Products</a>
+      <a href="index.html#contact" class="block py-3">Contact</a>
+    </div>
+  </header>
+  <section class="page-hero" style="background-image:linear-gradient(160deg,#1c1917,#3d2914);">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="text-sm uppercase tracking-widest text-white/80 mb-2">Fraca Servcom</p>
+      <h1>Executive Tables</h1>
+      <p class="lead">Premium desks and tables for executive offices.</p>
+    </div>
+  </section>
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container mx-auto px-4"><ol>
+    <li><a href="index.html">Home</a></li><li class="sep">/</li>
+    <li><a href="furniture.html">Furniture</a></li><li class="sep">/</li>
+    <li class="current">Executive Tables</li>
+  </ol></div></nav>
+  <main class="py-16"><div class="container mx-auto px-4">
+    <div class="coming-soon reveal">
+      <div class="coming-soon__icon"><i data-lucide="image" class="w-7 h-7"></i></div>
+      <h2>Coming Soon</h2>
+      <p>Photos for this collection are being prepared. Inquire for current stock, finishes, and pricing.</p>
+      <div class="coming-soon__actions">
+        <a href="https://wa.me/254725151495" class="btn btn-whatsapp"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
+        <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </div></main>
+  <footer class="site-footer"><div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div><a href="index.html" class="footer-brand">Fraca Servcom Ltd</a><p class="mt-3">Quality furniture, bags and supplies for Kenya.</p></div>
+      <div><h4 class="font-semibold text-lg">Quick Links</h4><ul class="space-y-2"><li><a href="index.html">Home</a></li><li><a href="furniture.html">Products</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
+      <div><h4 class="font-semibold text-lg">Connect</h4><a href="https://wa.me/254725151495" class="inline-flex items-center gap-2 hover:text-white"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a></div>
+    </div>
+    <div class="site-footer__bottom"><p>&copy; <span data-year></span> Fraca Servcom Ltd. All rights reserved.</p></div>
+  </div></footer>
+  <script src="main.js"></script>
 </body>
 </html>

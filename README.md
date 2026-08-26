@@ -1,126 +1,73 @@
 # Fraca Servcom Ltd — Static Website
 
-A responsive, static website for Fraca Servcom Ltd showcasing furniture, hardware and general supplies. Built with plain HTML, Tailwind (via CDN) and a small custom stylesheet. The site includes product galleries, contact and feedback forms (static), an embedded Google Map, and responsive navigation.
-
-## Short repository description (for GitHub)
-
-Fraca Servcom Ltd — A responsive static website showcasing furniture, hardware and supplies with product galleries, contact forms, and responsive navigation. Built with Tailwind CSS and a small custom stylesheet.
+Responsive static website for Fraca Servcom Ltd (Eldoret, Kenya) showcasing furniture, bags and supplies. Built with plain HTML, Tailwind CDN, shared `style.css` / `main.js`, and product galleries.
 
 ## Features
 
-- Responsive landing page (`index.html`) with hero, product categories, testimonials and CTA.
-- Product pages and galleries (e.g., `FURNITURE.html`, `HARDWARE.html`, `Executive-chairs.html`, plus many product-specific pages under the project root).
-- Local image assets located under `IMAGES/` (product photos referenced from pages).
-- Contact and feedback forms (static markup; no backend integration included).
-- Embedded Google Maps iframe for office location.
-- Accessibility improvements: descriptive `title` attributes for icon-only controls and `iframe`, alt text on images, keyboard-accessible navigation.
-- Styling via Tailwind CDN and a small `style.css` for custom styles.
+- Landing page with full-bleed product hero, about, divisions, testimonials, bags (coming soon), and contact form
+- Furniture hub (`furniture.html`) with live collections and **Coming soon** categories
+- Shared gallery + lightbox (`gallery-data.js` + `FracaGallery` in `main.js`)
+- Contact form ready for [Formspree](https://formspree.io) (WhatsApp CTA always available)
+- Mobile nav, scroll reveal, and consistent header/footer across pages
 
-
+## Project structure
 
 ```
-index.html
-style.css
-FURNITURE.html
-HARDWARE.html
-Executive-chairs.html
-Executive-tables.html
-Beds.html
-Dining-sets.html
-Coffee-tables.html
-Wardrobes.html
-Workstations.html
-IMAGES/   (product photos referenced by pages)
+index.html          # Home
+furniture.html      # Furniture catalog hub (use this filename on case-sensitive hosts)
+style.css           # Design system
+main.js             # Nav, lightbox, gallery helpers, form submit
+gallery-data.js     # Product image catalogs
+Beds.html …         # Category galleries (live or coming soon)
+IMAGES/             # Local product photos
 README.md
+ASSETS.md
+LICENSE
 ```
 
-(There are additional product HTML pages in the project root — this is a representative list.)
+### Live galleries (photos in `IMAGES/`)
+
+Beds, Coffee Tables, Dining Sets, Dressing Mirrors, Executive Chairs, Pulpits, Utility Chairs, Wardrobes
+
+### Coming soon (inquire for stock)
+
+Bags, Sofa Sets, Workstations, Conference Tables, Student Desks, Filing Cabinets, Entertainment Units, Office Partitioning, Executive Tables
 
 ## Preview locally
 
-Option 1 — Open `index.html` directly in your browser:
-- Open the file in your browser or use your editor’s Live Server.
-
-Option 2 — Serve with a lightweight HTTP server (recommended for proper relative path and map loading):
-
-PowerShell (if Python is installed):
+Open `index.html` in a browser, or serve the folder:
 
 ```powershell
-# from the project root
 python -m http.server 8000
-# then open http://localhost:8000 in your browser
 ```
 
-Or use the VS Code Live Server extension:
-- Install Live Server and open `index.html` with it.
+Then visit `http://localhost:8000`.
 
-## GitHub push instructions (generic)
+## Contact form (Formspree)
 
-1. Create a new empty repository on GitHub (via the web UI).
-2. From your local project root run:
+1. Create a free form at [formspree.io](https://formspree.io).
+2. In `index.html`, replace `YOUR_FORM_ID` in the form `action` URL:
 
-```bash
-git init
-git add .
-git commit -m "Initial commit — Fraca Servcom static website"
-git branch -M main
-# replace <YOUR-REPO-URL> with the HTTPS repo url from GitHub
-git remote add origin <YOUR-REPO-URL>
-git push -u origin main
+```html
+<form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 ```
 
-If you use the GitHub CLI you can create and push in one step:
+Until that ID is set, the site shows a clear message and still offers email/WhatsApp.
 
-```bash
-gh repo create <owner>/<repo-name> --public --source="." --remote=origin --push
-```
+## Accessibility notes
 
-## Accessibility & best-practice notes
+- Icon controls include `aria-label` / `title` where needed
+- Map iframe has a descriptive `title`
+- Gallery images use `alt` text and `loading="lazy"`
 
-- Icon-only controls include `title` attributes; the Google Maps iframe has a `title` attribute.
-- Images should include meaningful `alt` text — review and add more where needed.
-- Forms are static HTML — to capture submissions, wire them to a backend or a service (Formspree, Netlify Forms, or custom server).
-- Consider optimizing images (resize/compress) before publishing to reduce load times.
+## Deployment
 
-## Deployment suggestions
+- **GitHub Pages:** enable Pages from the `main` branch root
+- **Netlify / Vercel:** connect the repo or drag-and-drop the folder
 
-- GitHub Pages: push the `main` branch and enable Pages in the repo settings (serve from `main` branch root).
-- Netlify / Vercel: drag-and-drop the site folder or connect the GitHub repo for continuous deployment.
-
-## Recommended .gitignore (create in repo root)
-
-```
-# OS
-Thumbs.db
-.DS_Store
-
-# Node (if you later add tooling)
-node_modules/
-
-# IDE
-.vscode/
-
-# Images (if you prefer to keep large originals out of repo)
-# IMAGES/originals/
-```
-
-## Next steps you might want help with
-
-- Wire forms to a form service or backend endpoint.
-- Optimize image assets and add lazy-loading where helpful.
-- Add a deploy workflow (GitHub Actions) to publish to GitHub Pages or Netlify.
+On Linux/GitHub Pages, keep the furniture hub as lowercase `furniture.html` (already linked site-wide).
 
 ## License
 
-This repository and its contents are proprietary and are owned by Fraca Servcom Ltd. All rights are reserved unless explicit permission is granted. See `LICENSE` for details and contact information.
+Proprietary — Ac Fraca Servcom Ltd. See `LICENSE` and `ASSETS.md`.
 
-Images, product photos, logos and other branding assets are proprietary to Fraca Servcom Ltd. See `ASSETS.md` for details.
-
----
-
-Repository name on GitHub: `FRACA-SERVCOM-WEBSITE` (GitHub will convert spaces to hyphens for the URL).
-
-If you want, I can also:
-- update the repo description on GitHub,
-- remove or redact any images you want private before public sharing, or
-- add a deploy workflow to publish this site automatically.
