@@ -27,11 +27,9 @@ LICENSE
 
 ### Live galleries (photos in `IMAGES/`)
 
-Beds, Coffee Tables, Dining Sets, Dressing Mirrors, Executive Chairs, Pulpits, Utility Chairs, Wardrobes
+32 categories including beds, office chairs, executive chairs, reception desks, pedestal desks, conference tables, sofa sets, filing cabinets, and more. See `furniture.html` for the full catalog.
 
-### Coming soon (inquire for stock)
-
-Bags, Sofa Sets, Workstations, Conference Tables, Student Desks, Filing Cabinets, Entertainment Units, Office Partitioning, Executive Tables
+Regenerate `gallery-data.js` after adding images: run a folder scan script or add entries manually to match folder names under `IMAGES/`.
 
 ## Preview locally
 

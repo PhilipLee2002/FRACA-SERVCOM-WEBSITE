@@ -10,6 +10,76 @@
     }
   }
 
+  function initTheme() {
+    var root = document.documentElement;
+    var KEY = "fraca-theme";
+
+    function isDark() {
+      return root.getAttribute("data-theme") === "dark";
+    }
+
+    function setTheme(theme) {
+      if (theme === "dark") {
+        root.setAttribute("data-theme", "dark");
+      } else {
+        root.removeAttribute("data-theme");
+      }
+      localStorage.setItem(KEY, theme);
+      syncToggles();
+      createIcons();
+    }
+
+    function toggleTheme() {
+      setTheme(isDark() ? "light" : "dark");
+    }
+
+    function makeToggle(className) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "theme-toggle" + (className ? " " + className : "");
+      btn.addEventListener("click", toggleTheme);
+      var icon = document.createElement("i");
+      icon.setAttribute("data-lucide", isDark() ? "sun" : "moon");
+      icon.className = "w-5 h-5";
+      btn.appendChild(icon);
+      return btn;
+    }
+
+    function syncToggles() {
+      document.querySelectorAll(".theme-toggle").forEach(function (btn) {
+        btn.setAttribute("aria-label", isDark() ? "Switch to light mode" : "Switch to dark mode");
+        btn.setAttribute("title", isDark() ? "Light mode" : "Dark mode");
+        var icon = btn.querySelector("[data-lucide]");
+        if (icon) {
+          icon.setAttribute("data-lucide", isDark() ? "sun" : "moon");
+        }
+      });
+    }
+
+    var nav = document.querySelector(".site-header nav");
+    if (nav && nav.classList.contains("hidden")) {
+      var whatsapp = nav.querySelector(".btn-whatsapp");
+      var desktopToggle = makeToggle("hidden md:inline-flex");
+      if (whatsapp) {
+        nav.insertBefore(desktopToggle, whatsapp);
+      } else {
+        nav.appendChild(desktopToggle);
+      }
+    }
+
+    var menuToggle = document.getElementById("menu-toggle");
+    if (menuToggle) {
+      var mobileToggle = makeToggle("md:hidden");
+      var actions = menuToggle.parentElement;
+      if (actions && !actions.classList.contains("header-actions")) {
+        actions.classList.add("header-actions");
+      }
+      menuToggle.parentNode.insertBefore(mobileToggle, menuToggle);
+    }
+
+    syncToggles();
+  }
+
   function initNav() {
     var toggle = document.getElementById("menu-toggle");
     var menu = document.getElementById("mobile-menu");
@@ -163,30 +233,32 @@
     if (!global.FracaLightbox) initLightbox();
 
     list.forEach(function (item, index) {
-      var title = item.title || options.categoryLabel || "Product " + (index + 1);
+      var label = options.categoryLabel || "Product";
+      var title = item.title || label + " " + (index + 1);
+      var desc = (item.desc || "").trim();
+      var hasDesc = desc.length > 0;
+      var alt = hasDesc ? title : label + " " + (index + 1);
       var card = document.createElement("div");
-      card.className = "product-card reveal";
+      card.className = "product-card reveal" + (hasDesc ? "" : " product-card--image-only");
       card.innerHTML =
         '<div class="product-card__media">' +
         '<img src="' +
         item.src.replace(/"/g, "&quot;") +
         '" alt="' +
-        title.replace(/"/g, "&quot;") +
+        alt.replace(/"/g, "&quot;") +
         '" loading="lazy" class="product-image">' +
         "</div>" +
-        '<div class="product-card__body">' +
-        "<h3>" +
-        title.replace(/</g, "&lt;") +
-        "</h3>" +
-        (item.desc
-          ? '<p>' + item.desc.replace(/</g, "&lt;") + "</p>"
-          : "") +
-        "</div>";
+        (hasDesc
+          ? '<div class="product-card__body"><h3>' +
+            title.replace(/</g, "&lt;") +
+            "</h3><p>" +
+            desc.replace(/</g, "&lt;") +
+            "</p></div>"
+          : "");
 
       var img = card.querySelector("img");
       img.addEventListener("click", function () {
-        var caption = item.desc ? title + " — " + item.desc : title;
-        global.FracaLightbox.open(item.src, caption);
+        global.FracaLightbox.open(item.src, hasDesc ? title + " — " + desc : "");
       });
       el.appendChild(card);
     });
@@ -255,6 +327,7 @@
   }
 
   function init() {
+    initTheme();
     createIcons();
     initNav();
     initYear();

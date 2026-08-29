@@ -1,0 +1,254 @@
+﻿{
+    "sofaSets":  {
+                     "title":  "Sofa Sets",
+                     "hero":  "IMAGES/SOFA SETS/S1.png",
+                     "folder":  "SOFA SETS",
+                     "page":  "Sofa-sets.html",
+                     "count":  10
+                 },
+    "restaurantSeats":  {
+                            "title":  "Restaurant Seats",
+                            "hero":  "IMAGES/RESTAURANT SEATS/A35.png",
+                            "folder":  "RESTAURANT SEATS",
+                            "page":  "Restaurant-seats.html",
+                            "count":  3
+                        },
+    "churchAssemblyChairs":  {
+                                 "title":  "Church \u0026 Assembly Chairs",
+                                 "hero":  "IMAGES/CHURCH \u0026 ASSEMBLY CHAIRS/A42.png",
+                                 "folder":  "CHURCH \u0026 ASSEMBLY CHAIRS",
+                                 "page":  "Church-assembly-chairs.html",
+                                 "count":  2
+                             },
+    "diningSets":  {
+                       "title":  "Dining Sets",
+                       "hero":  "IMAGES/DINING SETS/0002540_5-piece-dining-table-set-cherry-finish[1].jpg",
+                       "folder":  "DINING SETS",
+                       "page":  "Dining-sets.html",
+                       "count":  49
+                   },
+    "executiveChairs":  {
+                            "title":  "Executive Chairs",
+                            "hero":  {
+                                         "value":  [
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/++.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/+9.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.0.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.10.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.13.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.17.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.2.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.20.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.21.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.26.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.28.png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.33.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.4.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/1.9.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2..png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.32.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.39.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.43.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/2.44.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/3.10.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/LBO44-Photoroom (36).png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (38).png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (59).png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (60).png"
+                                                   ],
+                                         "Count":  24
+                                     },
+                            "folder":  "EXECUTIVE CHAIRS",
+                            "page":  "Executive-chairs.html",
+                            "count":  37
+                        },
+    "dressingMirrors":  {
+                            "title":  "Dressing Mirrors",
+                            "hero":  "IMAGES/DRESSING MIRRORS/DM-41.JPG",
+                            "folder":  "DRESSING MIRRORS",
+                            "page":  "Dressing-mirrors.html",
+                            "count":  11
+                        },
+    "filingCabinets":  {
+                           "title":  "Filing Cabinets",
+                           "hero":  "IMAGES/FILING CABINETS/G1.png",
+                           "folder":  "FILING CABINETS",
+                           "page":  "Filing-cabinets.html",
+                           "count":  11
+                       },
+    "pedestalDesks":  {
+                          "title":  "Pedestal Desks",
+                          "hero":  "IMAGES/PEDESTAL DESKS/P1.png",
+                          "folder":  "PEDESTAL DESKS",
+                          "page":  "Pedestal-desks.html",
+                          "count":  5
+                      },
+    "rockingChairs":  {
+                          "title":  "Rocking Chairs",
+                          "hero":  null,
+                          "folder":  "ROCKING CHAIRS",
+                          "page":  "Rocking-chairs.html",
+                          "count":  3
+                      },
+    "benches":  {
+                    "title":  "Benches",
+                    "hero":  null,
+                    "folder":  "BENCHES",
+                    "page":  "Benches.html",
+                    "count":  3
+                },
+    "computerWorkStations":  {
+                                 "title":  "Computer Workstations",
+                                 "hero":  null,
+                                 "folder":  "COMPUTER WORK STATIONS",
+                                 "page":  "Computer-workstations.html",
+                                 "count":  3
+                             },
+    "storageSafes":  {
+                         "title":  "Storage Safes",
+                         "hero":  "IMAGES/STORAGE SAFES/K4.png",
+                         "folder":  "STORAGE SAFES",
+                         "page":  "Storage-safes.html",
+                         "count":  4
+                     },
+    "beds":  {
+                 "title":  "Beds",
+                 "hero":  "IMAGES/EXECUTIVE BEDS/_211[1].jpg",
+                 "folder":  "EXECUTIVE BEDS",
+                 "page":  "Beds.html",
+                 "count":  38
+             },
+    "utilityChairs":  {
+                          "title":  "Utility Chairs",
+                          "hero":  "IMAGES/UTILITY CHAIRS/33.JPG",
+                          "folder":  "UTILITY CHAIRS",
+                          "page":  "Utility-chairs.html",
+                          "count":  37
+                      },
+    "receptionDesks":  {
+                           "title":  "Reception Desks",
+                           "hero":  "IMAGES/RECEPTION DESKS/P6.png",
+                           "folder":  "RECEPTION DESKS",
+                           "page":  "Reception-desks.html",
+                           "count":  3
+                       },
+    "studentSets":  {
+                        "title":  "Student Desks",
+                        "hero":  "IMAGES/STUDENTS SETS/WhatsApp Image 2026-07-25 at 14.30.37.jpeg",
+                        "folder":  "STUDENTS SETS",
+                        "page":  "Student-desks.html",
+                        "count":  5
+                    },
+    "churchFurniture":  {
+                            "title":  "Church Furniture",
+                            "hero":  "IMAGES/CHURCH FURNITURE/B1.png",
+                            "folder":  "CHURCH FURNITURE",
+                            "page":  "Church-furniture.html",
+                            "count":  8
+                        },
+    "coatHangers":  {
+                        "title":  "Coat Hangers",
+                        "hero":  "IMAGES/COAT HANGERS/K2.png",
+                        "folder":  "COAT HANGERS",
+                        "page":  "Coat-hangers.html",
+                        "count":  2
+                    },
+    "executiveOfficeDesks":  {
+                                 "title":  "Executive Office Desks",
+                                 "hero":  "IMAGES/EXECUTIVE OFFICE DESKS/D10.png",
+                                 "folder":  "EXECUTIVE OFFICE DESKS",
+                                 "page":  "Executive-tables.html",
+                                 "count":  23
+                             },
+    "conferenceTables":  {
+                             "title":  "Conference Tables",
+                             "hero":  "IMAGES/CONFERENCE TABLES/F1.png",
+                             "folder":  "CONFERENCE TABLES",
+                             "page":  "Conference-tables.html",
+                             "count":  9
+                         },
+    "officeChairs":  {
+                         "title":  "Office Chairs",
+                         "hero":  "IMAGES/OFFICE CHAIRS/A1.png",
+                         "folder":  "OFFICE CHAIRS",
+                         "page":  "Office-chairs.html",
+                         "count":  33
+                     },
+    "catalinaChairs":  {
+                           "title":  "Catalina Chairs",
+                           "hero":  "IMAGES/CATALINA CHAIRS/A15.png",
+                           "folder":  "CATALINA CHAIRS",
+                           "page":  "Catalina-chairs.html",
+                           "count":  5
+                       },
+    "pulpits":  {
+                    "title":  "Pulpits",
+                    "hero":  "IMAGES/PULPITS/EIGHT.png",
+                    "folder":  "PULPITS",
+                    "page":  "Pulpits.html",
+                    "count":  11
+                },
+    "wardrobes":  {
+                      "title":  "Wardrobes",
+                      "hero":  "IMAGES/WARDROBES/3-door-wardrobe-500x500[1].png",
+                      "folder":  "WARDROBES",
+                      "page":  "Wardrobes.html",
+                      "count":  25
+                  },
+    "workStations":  {
+                         "title":  "Workstations",
+                         "hero":  "IMAGES/WORK STATIONS/I1.png",
+                         "folder":  "WORK STATIONS",
+                         "page":  "Workstations.html",
+                         "count":  5
+                     },
+    "coffeeTables":  {
+                         "title":  "Coffee Tables",
+                         "hero":  "IMAGES/COFFEE TABLES/CT-10.JPG",
+                         "folder":  "COFFEE TABLES",
+                         "page":  "Coffee-tables.html",
+                         "count":  20
+                     },
+    "libraryShelves":  {
+                           "title":  "Library \u0026 Supermarket Shelves",
+                           "hero":  "IMAGES/LIBRARY \u0026 SUPERMARKET SHELVES/T1.png",
+                           "folder":  "LIBRARY \u0026 SUPERMARKET SHELVES",
+                           "page":  "Library-shelves.html",
+                           "count":  8
+                       },
+    "visitorsBoardroomChairs":  {
+                                    "title":  "Visitors \u0026 Boardroom Chairs",
+                                    "hero":  "IMAGES/VISITORS \u0026 BOARDROOM CHAIRS/A2.png",
+                                    "folder":  "VISITORS \u0026 BOARDROOM CHAIRS",
+                                    "page":  "Visitors-boardroom-chairs.html",
+                                    "count":  16
+                                },
+    "entertainmentUnits":  {
+                               "title":  "Entertainment Units",
+                               "hero":  "IMAGES/ENTERTAINMENT UNITS/J1.png",
+                               "folder":  "ENTERTAINMENT UNITS",
+                               "page":  "Entertainment-units.html",
+                               "count":  3
+                           },
+    "conferenceChairs":  {
+                             "title":  "Conference Chairs",
+                             "hero":  "IMAGES/CONFERENCE CHAIRS/A27.png",
+                             "folder":  "CONFERENCE CHAIRS",
+                             "page":  "Conference-chairs.html",
+                             "count":  5
+                         },
+    "linkChairs":  {
+                       "title":  "Link Chairs",
+                       "hero":  "IMAGES/LINK CHAIRS/C1.png",
+                       "folder":  "LINK CHAIRS",
+                       "page":  "Link-chairs.html",
+                       "count":  7
+                   },
+    "shoeRacks":  {
+                      "title":  "Shoe Racks",
+                      "hero":  "IMAGES/Shoe Racks/shoerack 1.jpg",
+                      "folder":  "Shoe Racks",
+                      "page":  "Shoe-racks.html",
+                      "count":  6
+                  }
+}

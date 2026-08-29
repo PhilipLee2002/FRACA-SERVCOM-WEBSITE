@@ -1,805 +1,433 @@
-window.FracaGalleryData = {
+﻿window.FracaGalleryData = {
   beds: [
-    {
-      src: 'IMAGES/BEDS/_211[1].jpg',
-      title: 'Classic Wooden Bed Frame',
-      desc: 'Traditional craftsmanship meets modern comfort'
-    },
-    {
-      src: 'IMAGES/BEDS/_32[1].jpg',
-      title: 'Modern Platform Bed',
-      desc: 'Sleek design with built-in storage solutions'
-    },
-    {
-      src: 'IMAGES/BEDS/1-8-m-Podw-jne-ko-Tatami-Pok-j-Mistrza-ku-Sypialni-Proste-Nowoczesne-ko-CE.jpg_640x640[1].jpg',
-      title: 'Tatami Master Bed',
-      desc: 'Japanese-inspired design with premium materials'
-    },
-    {
-      src: 'IMAGES/BEDS/104.JPG',
-      title: 'Executive Bed Suite',
-      desc: 'Luxury bedroom furniture for discerning tastes'
-    },
-    {
-      src: 'IMAGES/BEDS/105.JPG',
-      title: 'Contemporary Bed Frame',
-      desc: 'Clean lines and minimalist aesthetic'
-    },
-    {
-      src: 'IMAGES/BEDS/3a_b9a31[1].jpg',
-      title: 'Premium Bed Collection',
-      desc: 'Handcrafted with attention to detail'
-    },
-    {
-      src: 'IMAGES/BEDS/825730fc3d729f71d576c003294a4c3c[1].jpg',
-      title: 'Designer Bed Frame',
-      desc: 'Unique styling for modern bedrooms'
-    },
-    {
-      src: 'IMAGES/BEDS/BED 3.JPG',
-      title: 'Luxury Bed Suite',
-      desc: 'Complete bedroom solution with premium finish'
-    },
-    {
-      src: 'IMAGES/BEDS/bed_ruler(l)[1].jpg',
-      title: 'Custom Size Bed',
-      desc: 'Made-to-measure for perfect fit'
-    },
-    {
-      src: 'IMAGES/BEDS/BGFB.jpg',
-      title: 'Elegant Bed Frame',
-      desc: 'Timeless design with contemporary appeal'
-    },
-    {
-      src: 'IMAGES/BEDS/BS-002[1].jpg',
-      title: 'Master Bedroom Suite',
-      desc: 'Comprehensive bedroom furniture collection'
-    },
-    {
-      src: 'IMAGES/BEDS/CDSC.jpg',
-      title: 'Modern Bed Design',
-      desc: 'Innovative features for enhanced comfort'
-    },
-    {
-      src: 'IMAGES/BEDS/fddhjgfdsda.jpg',
-      title: 'Contemporary Bed Frame',
-      desc: 'Stylish and functional bedroom furniture'
-    },
-    {
-      src: 'IMAGES/BEDS/FDE.jpg',
-      title: 'Premium Bed Collection',
-      desc: 'Quality craftsmanship and superior materials'
-    },
-    {
-      src: 'IMAGES/BEDS/Image_1759749676156.jpg',
-      title: 'Designer Bed Suite',
-      desc: 'Exclusive design for luxury living'
-    },
-    {
-      src: 'IMAGES/BEDS/IMG-20250503-WA0002.png',
-      title: 'Modern Platform Bed',
-      desc: 'Low-profile design with clean aesthetics'
-    },
-    {
-      src: 'IMAGES/BEDS/IMG-20250804-WA0002.png',
-      title: 'Contemporary Bed Frame',
-      desc: 'Versatile design for any bedroom style'
-    },
-    {
-      src: 'IMAGES/BEDS/LBO44-Photoroom (73).png',
-      title: 'Luxury Bed Suite',
-      desc: 'Premium materials and elegant styling'
-    },
-    {
-      src: 'IMAGES/BEDS/LBO44-Photoroom (77).png',
-      title: 'Executive Bed Frame',
-      desc: 'Professional-grade bedroom furniture'
-    },
-    {
-      src: 'IMAGES/BEDS/LBO44-Photoroom (83).png',
-      title: 'Modern Bed Design',
-      desc: 'Contemporary styling with timeless appeal'
-    },
-    {
-      src: 'IMAGES/BEDS/LBO44-Photoroom (88).png',
-      title: 'Premium Bed Collection',
-      desc: 'Hand-selected materials for durability'
-    },
-    {
-      src: 'IMAGES/BEDS/LBO44-Photoroom (89).png',
-      title: 'Designer Bed Frame',
-      desc: 'Unique features and superior comfort'
-    },
-    {
-      src: 'IMAGES/BEDS/LBO44-Photoroom (90).png',
-      title: 'Contemporary Bed Suite',
-      desc: 'Complete bedroom furniture solution'
-    },
-    {
-      src: 'IMAGES/BEDS/VBGVGV.jpg',
-      title: 'Modern Bed Frame',
-      desc: 'Innovative design with practical features'
-    },
-    {
-      src: 'IMAGES/BEDS/VCF.jpg',
-      title: 'Executive Bed Collection',
-      desc: 'Premium quality for luxury living'
-    },
-    {
-      src: 'IMAGES/BEDS/VGH.jpg',
-      title: 'Contemporary Bed Design',
-      desc: 'Stylish and functional bedroom furniture'
-    },
-    {
-      src: 'IMAGES/BEDS/VVC.jpg',
-      title: 'Modern Bed Suite',
-      desc: 'Complete bedroom furniture package'
-    },
-    {
-      src: 'IMAGES/BEDS/white-Photoroom (68).png',
-      title: 'White Bed Frame',
-      desc: 'Clean, bright design for modern bedrooms'
-    },
-    {
-      src: 'IMAGES/BEDS/xvb xcgfbvdczxf.jpg',
-      title: 'Unique Bed Design',
-      desc: 'Distinctive styling for individual taste'
-    }
+    { src: 'IMAGES/EXECUTIVE BEDS/_211[1].jpg', title: '_211[1]', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/_32[1].jpg', title: '_32[1]', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/104.JPG', title: '104', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/105.JPG', title: '105', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/105.JPG.png', title: '105.JPG', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/1-8-m-Podw-jne-ko-Tatami-Pok-j-Mistrza-ku-Sypialni-Proste-Nowoczesne-ko-CE.jpg_640x640[1].jpg', title: '1-8-m-Podw-jne-ko-Tatami-Pok-j-Mistrza-ku-Sypialni-Proste-Nowoczesne-ko-CE.jpg_640x640[1]', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/3a_b9a31[1].jpg', title: '3a_b9a31[1]', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/825730fc3d729f71d576c003294a4c3c[1].jpg', title: '825730fc3d729f71d576c003294a4c3c[1]', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/BED 3.JPG', title: 'BED 3', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed_ruler(l)[1].jpg', title: 'bed_ruler(l)[1]', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed2.png.png', title: 'bed2.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed3.png.png', title: 'bed3.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed4.png.png', title: 'bed4.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed5.png.png', title: 'bed5.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed6.png.jpg', title: 'bed6.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed7.png.jpg', title: 'bed7.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed8.png.jpg', title: 'bed8.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/bed9.png.png', title: 'bed9.png', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/BGFB.jpg', title: 'BGFB', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/BS-002[1].jpg', title: 'BS-002[1]', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/CDSC.jpg', title: 'CDSC', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/fddhjgfdsda.jpg', title: 'fddhjgfdsda', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/FDE.jpg', title: 'FDE', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/Image_1759749676156.jpg', title: 'Image_1759749676156', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/IMG-20250503-WA0002.png', title: 'IMG-20250503-WA0002', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/IMG-20250804-WA0002.png', title: 'IMG-20250804-WA0002', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/LBO44-Photoroom (73).png', title: 'LBO44-Photoroom (73)', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/LBO44-Photoroom (77).png', title: 'LBO44-Photoroom (77)', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/LBO44-Photoroom (83).png', title: 'LBO44-Photoroom (83)', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/LBO44-Photoroom (88).png', title: 'LBO44-Photoroom (88)', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/LBO44-Photoroom (89).png', title: 'LBO44-Photoroom (89)', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/LBO44-Photoroom (90).png', title: 'LBO44-Photoroom (90)', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/VBGVGV.jpg', title: 'VBGVGV', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/VCF.jpg', title: 'VCF', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/VGH.jpg', title: 'VGH', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/VVC.jpg', title: 'VVC', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/white-Photoroom (68).png', title: 'white-Photoroom (68)', desc: '' },
+    { src: 'IMAGES/EXECUTIVE BEDS/xvb xcgfbvdczxf.jpg', title: 'xvb xcgfbvdczxf', desc: '' },
   ],
-
   coffeeTables: [
-    {
-      src: 'IMAGES/COFFEE TABLES/CT-10.JPG',
-      title: 'Modern Glass Coffee Table',
-      desc: 'Sleek tempered glass top with chrome legs'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/LBO44-Photoroom (96).png',
-      title: 'Contemporary Wood Table',
-      desc: 'Premium hardwood with minimalist design'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/mngff.JPG',
-      title: 'Classic Oak Coffee Table',
-      desc: 'Traditional craftsmanship with modern appeal'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/ponbty.JPG',
-      title: 'Designer Coffee Table',
-      desc: 'Unique styling for contemporary interiors'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/pp.JPG',
-      title: 'Elegant Living Room Table',
-      desc: 'Perfect centerpiece for your living space'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/Queen-Anne-Table1[1].jpg',
-      title: 'Queen Anne Style Table',
-      desc: 'Classic elegance with curved legs'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/Screenshot 2023-03-03 at 10-03-26 table design - Google Search.png',
-      title: 'Round Glass Table',
-      desc: 'Modern circular design with glass top'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/Screenshot 2024-03-06 at 10-18-13 round coffee table - Google Search.png',
-      title: 'Contemporary Round Table',
-      desc: 'Clean lines and versatile styling'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/Screenshot 2024-03-06 at 10-22-20 round coffee table - Google Search.png',
-      title: 'Modern Round Coffee Table',
-      desc: 'Sleek design perfect for small spaces'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/Screenshot 2024-03-06 at 12-47-10 glass round coffee table with middle stand - Google Search.png',
-      title: 'Glass Center Table',
-      desc: 'Transparent elegance with central support'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/Serta-Upholstery-Coffee-Table-Set[1].jpg',
-      title: 'Upholstered Coffee Table Set',
-      desc: 'Luxurious fabric with matching ottoman'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/Sierra-Mission-Medium-Oak-Finish-Coffee-Table-P16252160[1].jpg',
-      title: 'Mission Style Oak Table',
-      desc: 'American craftsman design in medium oak'
-    },
-    {
-      src: 'IMAGES/COFFEE TABLES/William-Sheppee-Binks-Coffee-Table[1].jpg',
-      title: 'William Sheppee Coffee Table',
-      desc: 'Premium British design and craftsmanship'
-    }
+    { src: 'IMAGES/COFFEE TABLES/CT-10.JPG', title: 'CT-10', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/E1.png', title: 'E1', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/E2.png', title: 'E2', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/E3.png', title: 'E3', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/E4.png', title: 'E4', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/E6.png', title: 'E6', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/E7.png', title: 'E7', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/E8.png', title: 'E8', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/LBO44-Photoroom (96).png', title: 'LBO44-Photoroom (96)', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/mngff.JPG', title: 'mngff', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/ponbty.JPG', title: 'ponbty', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/pp.JPG', title: 'pp', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/Queen-Anne-Table1[1].jpg', title: 'Queen-Anne-Table1[1]', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/Screenshot 2023-03-03 at 10-03-26 table design - Google Search.png', title: 'Screenshot 2023-03-03 at 10-03-26 table design - Google Search', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/Screenshot 2024-03-06 at 10-18-13 round coffee table - Google Search.png', title: 'Screenshot 2024-03-06 at 10-18-13 round coffee table - Google Search', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/Screenshot 2024-03-06 at 10-22-20 round coffee table - Google Search.png', title: 'Screenshot 2024-03-06 at 10-22-20 round coffee table - Google Search', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/Screenshot 2024-03-06 at 12-47-10 glass round coffee table with middle stand - Google Search.png', title: 'Screenshot 2024-03-06 at 12-47-10 glass round coffee table with middle stand - Google Search', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/Serta-Upholstery-Coffee-Table-Set[1].jpg', title: 'Serta-Upholstery-Coffee-Table-Set[1]', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/Sierra-Mission-Medium-Oak-Finish-Coffee-Table-P16252160[1].jpg', title: 'Sierra-Mission-Medium-Oak-Finish-Coffee-Table-P16252160[1]', desc: '' },
+    { src: 'IMAGES/COFFEE TABLES/William-Sheppee-Binks-Coffee-Table[1].jpg', title: 'William-Sheppee-Binks-Coffee-Table[1]', desc: '' },
   ],
-
   diningSets: [
-    {
-      src: 'IMAGES/DINING SETS/0002540_5-piece-dining-table-set-cherry-finish[1].jpg',
-      title: '5-Piece Cherry Dining Set',
-      desc: 'Classic cherry finish with matching chairs'
-    },
-    {
-      src: 'IMAGES/DINING SETS/1_37_1049[1].jpg',
-      title: 'Modern Dining Collection',
-      desc: 'Contemporary design with premium materials'
-    },
-    {
-      src: 'IMAGES/DINING SETS/1_37_243_1_1201_1_1186[1].jpg',
-      title: 'Elegant Dining Suite',
-      desc: 'Sophisticated styling for formal dining'
-    },
-    {
-      src: 'IMAGES/DINING SETS/1345[1].jpg',
-      title: 'Traditional Dining Set',
-      desc: 'Timeless design with quality craftsmanship'
-    },
-    {
-      src: 'IMAGES/DINING SETS/1390-76-Set[1].jpg',
-      title: 'Contemporary Dining Table',
-      desc: 'Clean lines and modern appeal'
-    },
-    {
-      src: 'IMAGES/DINING SETS/1609bf9ba2e6eedd5b8964b6b0089108[1].jpg',
-      title: 'Luxury Dining Collection',
-      desc: 'Premium materials and elegant finish'
-    },
-    {
-      src: 'IMAGES/DINING SETS/1713-15-8[1].jpg',
-      title: 'Family Dining Set',
-      desc: 'Perfect for everyday family meals'
-    },
-    {
-      src: 'IMAGES/DINING SETS/19209_orig[1].jpg',
-      title: 'Classic Dining Suite',
-      desc: 'Traditional elegance with modern comfort'
-    },
-    {
-      src: 'IMAGES/DINING SETS/200772514165063049[1].jpg',
-      title: 'Modern Dining Table Set',
-      desc: 'Contemporary styling for modern homes'
-    },
-    {
-      src: 'IMAGES/DINING SETS/217_1[1].jpg',
-      title: 'Premium Dining Collection',
-      desc: 'High-quality materials and superior finish'
-    },
-    {
-      src: 'IMAGES/DINING SETS/5300[1].jpg',
-      title: 'Executive Dining Set',
-      desc: 'Professional-grade dining furniture'
-    },
-    {
-      src: 'IMAGES/DINING SETS/6-seater-dining-table-500x500[1].jpg',
-      title: '6-Seater Dining Table',
-      desc: 'Spacious design for larger families'
-    },
-    {
-      src: 'IMAGES/DINING SETS/781759[1].jpg',
-      title: 'Designer Dining Suite',
-      desc: 'Unique styling for distinctive homes'
-    },
-    {
-      src: 'IMAGES/DINING SETS/91nysJL9lTL._SL1500_[1].jpg',
-      title: 'Contemporary Dining Set',
-      desc: 'Modern design with practical features'
-    },
-    {
-      src: 'IMAGES/DINING SETS/aria-espresso-dark-wood-square-and-danni-dining-set-23[1].jpg',
-      title: 'Espresso Dining Collection',
-      desc: 'Rich dark wood finish with square table'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Atlantic-Furniture-Montego-Bay-5-Piece-Dining-Set[1].jpg',
-      title: 'Montego Bay Dining Set',
-      desc: 'Coastal-inspired design with tropical flair'
-    },
-    {
-      src: 'IMAGES/DINING SETS/b63447be3740885663e4043a6c9531b4[1].jpg',
-      title: 'Rustic Dining Collection',
-      desc: 'Natural wood finish with country charm'
-    },
-    {
-      src: 'IMAGES/DINING SETS/BARISTA_195cm_DT_with_8_Roma_Chairs[1].jpg',
-      title: 'Barista Dining Suite',
-      desc: 'Large table with 8 Roma chairs included'
-    },
-    {
-      src: 'IMAGES/DINING SETS/black-dining-table-set-for-6-small-black-glass-dining-table-set-square-black-dining-table-set-black-and-grey-dining-table-set[1].jpg',
-      title: 'Black Glass Dining Set',
-      desc: 'Sleek black glass top with modern chairs'
-    },
-    {
-      src: 'IMAGES/DINING SETS/boyer-black-and-cherry-wood-dining-table-set-6[1].jpg',
-      title: 'Boyer Dining Collection',
-      desc: 'Black and cherry wood combination'
-    },
-    {
-      src: 'IMAGES/DINING SETS/c53349f3439d348c447ff3a662470f37--round-dining-tables-round-pedestal-tables[1].jpg',
-      title: 'Round Pedestal Table',
-      desc: 'Classic round design with pedestal base'
-    },
-    {
-      src: 'IMAGES/DINING SETS/captivating-black-round-kitchen-tables-dining-round-table-sets-home-design-interior-exterior-kitchen-cheapjpg[1].jpg',
-      title: 'Round Kitchen Table',
-      desc: 'Perfect for compact dining spaces'
-    },
-    {
-      src: 'IMAGES/DINING SETS/ch-may-wooden-dining-room[1].jpg',
-      title: 'Wooden Dining Room Set',
-      desc: 'Natural wood finish for warm ambiance'
-    },
-    {
-      src: 'IMAGES/DINING SETS/CH2.jpg',
-      title: 'Premium Dining Suite',
-      desc: 'High-end materials and craftsmanship'
-    },
-    {
-      src: 'IMAGES/DINING SETS/CH3.jpg',
-      title: 'Executive Dining Collection',
-      desc: 'Professional styling for formal dining'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Copy (2) of ch_p7[2].jpg',
-      title: 'Contemporary Dining Set',
-      desc: 'Modern design with practical functionality'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Copy (2) of sh_p4[2].jpg',
-      title: 'Stylish Dining Suite',
-      desc: 'Elegant styling for sophisticated homes'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Copy (3) of ch_p8[1].jpg',
-      title: 'Modern Dining Collection',
-      desc: 'Contemporary appeal with quality materials'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Copy (3) of sh_p4[2].jpg',
-      title: 'Premium Dining Set',
-      desc: 'Superior quality and elegant design'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Copy of ch_p7[2].jpg',
-      title: 'Classic Dining Suite',
-      desc: 'Traditional styling with modern comfort'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Copy of sh_p4[2].jpg',
-      title: 'Elegant Dining Collection',
-      desc: 'Refined design for discerning tastes'
-    },
-    {
-      src: 'IMAGES/DINING SETS/dining-table-set-6-seater-500x500[1].jpg',
-      title: '6-Seater Dining Set',
-      desc: 'Complete set for family dining'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Family-Dining-Set[1].jpg',
-      title: 'Family Dining Collection',
-      desc: 'Perfect for family gatherings and meals'
-    },
-    {
-      src: 'IMAGES/DINING SETS/French-Dining-Set[1].jpg',
-      title: 'French Dining Suite',
-      desc: 'European styling with classic elegance'
-    },
-    {
-      src: 'IMAGES/DINING SETS/German-Dining-Set[1].jpg',
-      title: 'German Dining Collection',
-      desc: 'Precision engineering and quality materials'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Italian-Dining-Set[1].jpg',
-      title: 'Italian Dining Suite',
-      desc: 'Mediterranean flair with luxury finish'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Mahogany-Dining-Set[1].jpg',
-      title: 'Mahogany Dining Collection',
-      desc: 'Rich mahogany finish with premium quality'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Oak-Dining-Set[1].jpg',
-      title: 'Oak Dining Suite',
-      desc: 'Natural oak grain with traditional styling'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Teak-Dining-Set[1].jpg',
-      title: 'Teak Dining Collection',
-      desc: 'Durable teak wood with weather resistance'
-    },
-    {
-      src: 'IMAGES/DINING SETS/Walnut-Dining-Set[1].jpg',
-      title: 'Walnut Dining Suite',
-      desc: 'Dark walnut finish with contemporary appeal'
-    },
-    {
-      src: 'IMAGES/DINING SETS/White-Dining-Set[1].jpg',
-      title: 'White Dining Collection',
-      desc: 'Clean white finish for bright spaces'
-    }
+    { src: 'IMAGES/DINING SETS/0002540_5-piece-dining-table-set-cherry-finish[1].jpg', title: '0002540_5-piece-dining-table-set-cherry-finish[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/1_37_1049[1].jpg', title: '1_37_1049[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/1_37_243_1_1201_1_1186[1].jpg', title: '1_37_243_1_1201_1_1186[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/1345[1].jpg', title: '1345[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/1390-76-Set[1].jpg', title: '1390-76-Set[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/1609bf9ba2e6eedd5b8964b6b0089108[1].jpg', title: '1609bf9ba2e6eedd5b8964b6b0089108[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/1713-15-8[1].jpg', title: '1713-15-8[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/19209_orig[1].jpg', title: '19209_orig[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/200772514165063049[1].jpg', title: '200772514165063049[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/217_1[1].jpg', title: '217_1[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/5300[1].jpg', title: '5300[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/6-seater-dining-table-500x500[1].jpg', title: '6-seater-dining-table-500x500[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/781759[1].jpg', title: '781759[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/91nysJL9lTL._SL1500_[1].jpg', title: '91nysJL9lTL._SL1500_[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/aria-espresso-dark-wood-square-and-danni-dining-set-23[1].jpg', title: 'aria-espresso-dark-wood-square-and-danni-dining-set-23[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Atlantic-Furniture-Montego-Bay-5-Piece-Dining-Set[1].jpg', title: 'Atlantic-Furniture-Montego-Bay-5-Piece-Dining-Set[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/b63447be3740885663e4043a6c9531b4[1].jpg', title: 'b63447be3740885663e4043a6c9531b4[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/BARISTA_195cm_DT_with_8_Roma_Chairs[1].jpg', title: 'BARISTA_195cm_DT_with_8_Roma_Chairs[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/black-dining-table-set-for-6-small-black-glass-dining-table-set-square-black-dining-table-set-black-and-grey-dining-table-set[1].jpg', title: 'black-dining-table-set-for-6-small-black-glass-dining-table-set-square-black-dining-table-set-black-and-grey-dining-table-set[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/boyer-black-and-cherry-wood-dining-table-set-6[1].jpg', title: 'boyer-black-and-cherry-wood-dining-table-set-6[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/c53349f3439d348c447ff3a662470f37--round-dining-tables-round-pedestal-tables[1].jpg', title: 'c53349f3439d348c447ff3a662470f37--round-dining-tables-round-pedestal-tables[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/captivating-black-round-kitchen-tables-dining-round-table-sets-home-design-interior-exterior-kitchen-cheapjpg[1].jpg', title: 'captivating-black-round-kitchen-tables-dining-round-table-sets-home-design-interior-exterior-kitchen-cheapjpg[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/CH2.jpg', title: 'CH2', desc: '' },
+    { src: 'IMAGES/DINING SETS/CH3.jpg', title: 'CH3', desc: '' },
+    { src: 'IMAGES/DINING SETS/ch-may-wooden-dining-room[1].jpg', title: 'ch-may-wooden-dining-room[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Copy (2) of ch_p7[2].jpg', title: 'Copy (2) of ch_p7[2]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Copy (2) of sh_p4[2].jpg', title: 'Copy (2) of sh_p4[2]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Copy (3) of ch_p8[1].jpg', title: 'Copy (3) of ch_p8[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Copy (3) of sh_p4[2].jpg', title: 'Copy (3) of sh_p4[2]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Copy of ch_p7[2].jpg', title: 'Copy of ch_p7[2]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Copy of ch_p8[1].jpg', title: 'Copy of ch_p8[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Copy of sh_p5[2].jpg', title: 'Copy of sh_p5[2]', desc: '' },
+    { src: 'IMAGES/DINING SETS/dd.JPG', title: 'dd', desc: '' },
+    { src: 'IMAGES/DINING SETS/ddd.JPG', title: 'ddd', desc: '' },
+    { src: 'IMAGES/DINING SETS/dining[1].jpg', title: 'dining[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/Diningroom-001-Alex[1].jpg', title: 'Diningroom-001-Alex[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/dining-room-table-chairs-fresh-with-images-of-dining-room-concept-new-in-gallery[1].jpg', title: 'dining-room-table-chairs-fresh-with-images-of-dining-room-concept-new-in-gallery[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/dr_rm_savona_brown~Sofia-Vergara-Savona-Chocolate-5-Pc-Rectangle-Dining-Room[1].jpg', title: 'dr_rm_savona_brown~Sofia-Vergara-Savona-Chocolate-5-Pc-Rectangle-Dining-Room[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/H2.png', title: 'H2', desc: '' },
+    { src: 'IMAGES/DINING SETS/H3.png', title: 'H3', desc: '' },
+    { src: 'IMAGES/DINING SETS/H4.png', title: 'H4', desc: '' },
+    { src: 'IMAGES/DINING SETS/H5.png', title: 'H5', desc: '' },
+    { src: 'IMAGES/DINING SETS/H6.png', title: 'H6', desc: '' },
+    { src: 'IMAGES/DINING SETS/H7.png', title: 'H7', desc: '' },
+    { src: 'IMAGES/DINING SETS/IMG_20240105_090210.png', title: 'IMG_20240105_090210', desc: '' },
+    { src: 'IMAGES/DINING SETS/LBO44-Photoroom - 2025-10-06T125721.845.png', title: 'LBO44-Photoroom - 2025-10-06T125721.845', desc: '' },
+    { src: 'IMAGES/DINING SETS/LBO44-Photoroom (68).png', title: 'LBO44-Photoroom (68)', desc: '' },
+    { src: 'IMAGES/DINING SETS/round-kitchen-table-and-chair-sets-kitchen-table-sets-kmart[1].jpg', title: 'round-kitchen-table-and-chair-sets-kitchen-table-sets-kmart[1]', desc: '' },
+    { src: 'IMAGES/DINING SETS/spin_prod_1287870812[1].jpg', title: 'spin_prod_1287870812[1]', desc: '' },
   ],
-
   dressingMirrors: [
-    {
-      src: 'IMAGES/DRESSING MIRRORS/DM-41.JPG',
-      title: 'Classic Dressing Mirror',
-      desc: 'Traditional styling with wooden frame'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/DM-42.JPG',
-      title: 'Modern Wall Mirror',
-      desc: 'Contemporary design with clean lines'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/DM-44.JPG',
-      title: 'Elegant Full-Length Mirror',
-      desc: 'Perfect for complete outfit viewing'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/DM-50.JPG',
-      title: 'Premium Dressing Mirror',
-      desc: 'High-quality glass with stylish frame'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/DM-53.JPG',
-      title: 'Contemporary Mirror Design',
-      desc: 'Modern appeal with practical functionality'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/DM-54.jpg',
-      title: 'Stylish Bedroom Mirror',
-      desc: 'Perfect addition to any bedroom decor'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/DM-55.JPG',
-      title: 'Luxury Dressing Mirror',
-      desc: 'Premium materials and elegant finish'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/fym-721-with-mirror-dresser-500x500[1].jpg',
-      title: 'Mirror Dresser Combination',
-      desc: 'Complete dressing solution with storage'
-    },
-    {
-      src: 'IMAGES/DRESSING MIRRORS/LBO44-Photoroom (95).png',
-      title: 'Designer Dressing Mirror',
-      desc: 'Unique styling for distinctive bedrooms'
-    }
+    { src: 'IMAGES/DRESSING MIRRORS/DM-41.JPG', title: 'DM-41', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/DM-42.JPG', title: 'DM-42', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/DM-44.JPG', title: 'DM-44', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/DM-50.JPG', title: 'DM-50', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/DM-53.JPG', title: 'DM-53', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/DM-54.jpg', title: 'DM-54', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/DM-55.JPG', title: 'DM-55', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/fym-721-with-mirror-dresser-500x500[1].jpg', title: 'fym-721-with-mirror-dresser-500x500[1]', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/LBO44-Photoroom (95).png', title: 'LBO44-Photoroom (95)', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/M1.png', title: 'M1', desc: '' },
+    { src: 'IMAGES/DRESSING MIRRORS/M2.png', title: 'M2', desc: '' },
   ],
-
   pulpits: [
-    {
-      src: 'IMAGES/PULPITS/ONE.jpg',
-      title: 'Traditional Wooden Pulpit',
-      desc: 'Classic design with carved wooden details'
-    },
-    {
-      src: 'IMAGES/PULPITS/TWO.jpg',
-      title: 'Modern Church Pulpit',
-      desc: 'Contemporary styling for modern worship'
-    },
-    {
-      src: 'IMAGES/PULPITS/THREE.jpg',
-      title: 'Elegant Oak Pulpit',
-      desc: 'Premium oak construction with traditional styling'
-    },
-    {
-      src: 'IMAGES/PULPITS/FOUR.jpg',
-      title: 'Designer Pulpit',
-      desc: 'Unique design for distinctive worship spaces'
-    },
-    {
-      src: 'IMAGES/PULPITS/FIVE.jpg',
-      title: 'Classic Church Pulpit',
-      desc: 'Timeless design with quality craftsmanship'
-    },
-    {
-      src: 'IMAGES/PULPITS/SIX.JPG',
-      title: 'Contemporary Pulpit',
-      desc: 'Modern appeal with practical functionality'
-    },
-    {
-      src: 'IMAGES/PULPITS/SEVEN.png',
-      title: 'Premium Pulpit Design',
-      desc: 'High-end materials and elegant finish'
-    },
-    {
-      src: 'IMAGES/PULPITS/EIGHT.png',
-      title: 'Executive Pulpit',
-      desc: 'Professional styling for formal services'
-    },
-    {
-      src: 'IMAGES/PULPITS/NINE.png',
-      title: 'Luxury Church Pulpit',
-      desc: 'Premium construction with attention to detail'
-    },
-    {
-      src: 'IMAGES/PULPITS/TEN.png',
-      title: 'Modern Worship Pulpit',
-      desc: "Contemporary design for today's churches"
-    },
-    {
-      src: 'IMAGES/PULPITS/ELEVEN.png',
-      title: 'Traditional Pulpit',
-      desc: 'Classic styling with modern comfort'
-    }
+    { src: 'IMAGES/PULPITS/EIGHT.png', title: 'EIGHT', desc: '' },
+    { src: 'IMAGES/PULPITS/ELEVEN.png', title: 'ELEVEN', desc: '' },
+    { src: 'IMAGES/PULPITS/FIVE.jpg', title: 'FIVE', desc: '' },
+    { src: 'IMAGES/PULPITS/FOUR.jpg', title: 'FOUR', desc: '' },
+    { src: 'IMAGES/PULPITS/NINE.png', title: 'NINE', desc: '' },
+    { src: 'IMAGES/PULPITS/ONE.jpg', title: 'ONE', desc: '' },
+    { src: 'IMAGES/PULPITS/SEVEN.png', title: 'SEVEN', desc: '' },
+    { src: 'IMAGES/PULPITS/SIX.JPG', title: 'SIX', desc: '' },
+    { src: 'IMAGES/PULPITS/TEN.png', title: 'TEN', desc: '' },
+    { src: 'IMAGES/PULPITS/THREE.jpg', title: 'THREE', desc: '' },
+    { src: 'IMAGES/PULPITS/TWO.jpg', title: 'TWO', desc: '' },
   ],
-
   utilityChairs: [
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/33.JPG',
-      title: 'Professional Office Chair',
-      desc: 'Durable construction for daily office use'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/4-seater-waiting-chair-500x500-1.jpg',
-      title: '4-Seater Waiting Chair',
-      desc: 'Perfect for reception areas and waiting rooms'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/53_20161911[1].jpg',
-      title: 'Commercial Seating',
-      desc: 'Heavy-duty design for commercial spaces'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/62.JPG',
-      title: 'Utility Office Chair',
-      desc: 'Versatile seating for various environments'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/BHJF.jpg',
-      title: 'Modern Utility Chair',
-      desc: 'Contemporary design with practical features'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/BVBN.jpg',
-      title: 'Professional Seating',
-      desc: 'Quality materials for professional use'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/CFGG.jpg',
-      title: 'Commercial Chair',
-      desc: 'Built for durability in commercial settings'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/DFFDS.jpg',
-      title: 'Office Utility Chair',
-      desc: 'Comfortable seating for office environments'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/DFG.jpg',
-      title: 'Standard Office Chair',
-      desc: 'Reliable seating for everyday office use'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/DFGH.jpg',
-      title: 'Professional Utility Chair',
-      desc: 'Premium materials and construction'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/DFGYHJ.jpg',
-      title: 'Modern Office Seating',
-      desc: 'Contemporary styling with comfort features'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/EFDG.jpg',
-      title: 'Commercial Utility Chair',
-      desc: 'Designed for commercial and office use'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/FCFG.jpg',
-      title: 'Professional Seating Solution',
-      desc: 'Complete seating solution for professionals'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/FGHFG.jpg',
-      title: 'Office Utility Seating',
-      desc: 'Versatile seating for office environments'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/Figueras20310020Mauro20-20Ergonomic20benches20for20airports20590px[1].jpg',
-      title: 'Ergonomic Airport Bench',
-      desc: 'Specialized seating for transportation hubs'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/HJKL.jpg',
-      title: 'Modern Utility Chair',
-      desc: 'Contemporary design with practical functionality'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/HYUJK.jpg',
-      title: 'Commercial Office Chair',
-      desc: 'Professional-grade seating for commercial use'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/Image_1759749820653.jpg',
-      title: 'Contemporary Utility Chair',
-      desc: 'Modern styling with comfortable seating'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/l.JPG',
-      title: 'Standard Utility Seating',
-      desc: 'Reliable seating for various applications'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/LBO44-Photoroom (5).jpg',
-      title: 'Professional Utility Chair',
-      desc: 'High-quality construction for professional use'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/LBO44-Photoroom (6).jpg',
-      title: 'Modern Office Chair',
-      desc: 'Contemporary design for modern offices'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/LBO44-Photoroom (7).jpg',
-      title: 'Commercial Seating',
-      desc: 'Durable design for commercial environments'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/LINK 13.JPG',
-      title: 'LINK Series Chair',
-      desc: 'Professional seating from our LINK collection'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/LINK 3.jpg',
-      title: 'LINK Professional Chair',
-      desc: 'Premium seating for professional environments'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/LINK CHAIR 2.JPG',
-      title: 'LINK Chair Collection',
-      desc: 'Part of our premium LINK chair series'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/LK.JPG',
-      title: 'Utility Office Seating',
-      desc: 'Versatile seating for office applications'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/NHGF.jpg',
-      title: 'Professional Utility Chair',
-      desc: 'Quality construction for professional use'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/p-zoom[1].jpg',
-      title: 'Zoom Series Chair',
-      desc: 'Modern seating from our Zoom collection'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/VGHJ.jpg',
-      title: 'Contemporary Utility Chair',
-      desc: 'Modern design with practical features'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/Visitors chair.jpg',
-      title: 'Visitor Chair',
-      desc: 'Comfortable seating for reception areas'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/white-Photoroom (67).png',
-      title: 'White Utility Chair',
-      desc: 'Clean white finish for modern interiors'
-    },
-    {
-      src: 'IMAGES/UTILITY-CHAIRS/XSCV.jpg',
-      title: 'Professional Seating',
-      desc: 'High-quality seating for professional environments'
-    }
+    { src: 'IMAGES/UTILITY CHAIRS/33.JPG', title: '33', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/4-seater-waiting-chair-500x500-1.jpg', title: '4-seater-waiting-chair-500x500-1', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/53_20161911[1].jpg', title: '53_20161911[1]', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/62.JPG', title: '62', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/A14.png', title: 'A14', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/A16.png', title: 'A16', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/A33.png', title: 'A33', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/A68.png', title: 'A68', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/A8.png', title: 'A8', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/BHJF.jpg', title: 'BHJF', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/BVBN.jpg', title: 'BVBN', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/CFGG.jpg', title: 'CFGG', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/DFFDS.jpg', title: 'DFFDS', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/DFG.jpg', title: 'DFG', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/DFGH.jpg', title: 'DFGH', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/DFGYHJ.jpg', title: 'DFGYHJ', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/EFDG.jpg', title: 'EFDG', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/FCFG.jpg', title: 'FCFG', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/FGHFG.jpg', title: 'FGHFG', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/Figueras�203100�20Mauro�20-�20Ergonomic�20benches�20for�20airports�20590px[1].jpg', title: 'Figueras�203100�20Mauro�20-�20Ergonomic�20benches�20for�20airports�20590px[1]', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/HJKL.jpg', title: 'HJKL', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/HYUJK.jpg', title: 'HYUJK', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/Image_1759749820653.jpg', title: 'Image_1759749820653', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/l.JPG', title: 'l', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/LBO44-Photoroom (5).jpg', title: 'LBO44-Photoroom (5)', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/LBO44-Photoroom (6).jpg', title: 'LBO44-Photoroom (6)', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/LBO44-Photoroom (7).jpg', title: 'LBO44-Photoroom (7)', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/LINK 13.JPG', title: 'LINK 13', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/LINK 3.jpg', title: 'LINK 3', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/LINK CHAIR 2.JPG', title: 'LINK CHAIR 2', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/LK.JPG', title: 'LK', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/NHGF.jpg', title: 'NHGF', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/p-zoom[1].jpg', title: 'p-zoom[1]', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/VGHJ.jpg', title: 'VGHJ', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/Visitors chair.jpg', title: 'Visitors chair', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/white-Photoroom (67).png', title: 'white-Photoroom (67)', desc: '' },
+    { src: 'IMAGES/UTILITY CHAIRS/XSCV.jpg', title: 'XSCV', desc: '' },
   ],
-
   wardrobes: [
-    {
-      src: 'IMAGES/WARDROBES/3-door-wardrobe-500x500[1].png',
-      title: '3-Door Wardrobe',
-      desc: 'Spacious storage with three full doors'
-    },
-    {
-      src: 'IMAGES/WARDROBES/4-030[1].jpg',
-      title: 'Modern Wardrobe Design',
-      desc: 'Contemporary styling with practical features'
-    },
-    {
-      src: 'IMAGES/WARDROBES/4-door-with-mirror[1].jpg',
-      title: '4-Door Mirror Wardrobe',
-      desc: 'Complete storage solution with built-in mirror'
-    },
-    {
-      src: 'IMAGES/WARDROBES/701-167-1016[1].jpg',
-      title: 'Premium Wardrobe Collection',
-      desc: 'High-quality materials and elegant finish'
-    },
-    {
-      src: 'IMAGES/WARDROBES/7011671012_2dr_coffee[1].jpg',
-      title: 'Coffee Finish Wardrobe',
-      desc: 'Warm coffee finish with two doors'
-    },
-    {
-      src: 'IMAGES/WARDROBES/71.jpg',
-      title: 'Contemporary Wardrobe',
-      desc: 'Modern design with clean lines'
-    },
-    {
-      src: 'IMAGES/WARDROBES/71zOKvbqJ9L.jpg',
-      title: 'Designer Wardrobe',
-      desc: 'Unique styling for distinctive bedrooms'
-    },
-    {
-      src: 'IMAGES/WARDROBES/930f0cb5caf002108990d14a1a89be72.jpg',
-      title: 'Classic Wardrobe Design',
-      desc: 'Traditional styling with modern functionality'
-    },
-    {
-      src: 'IMAGES/WARDROBES/BG.jpg',
-      title: 'Executive Wardrobe',
-      desc: 'Professional-grade bedroom storage'
-    },
-    {
-      src: 'IMAGES/WARDROBES/black-glass-chest-of-drawers-p41179-31306_zoom[1].jpg',
-      title: 'Black Glass Chest',
-      desc: 'Sleek black glass with multiple drawers'
-    },
-    {
-      src: 'IMAGES/WARDROBES/CH3.JPG',
-      title: 'Premium Wardrobe Suite',
-      desc: 'Complete bedroom storage solution'
-    },
-    {
-      src: 'IMAGES/WARDROBES/CHARLES_1_DOOR_6_DRAWER_CHEST[1].jpg',
-      title: 'Charles Chest of Drawers',
-      desc: 'Single door with six spacious drawers'
-    },
-    {
-      src: 'IMAGES/WARDROBES/CHEST OF DRAWERS.JPG',
-      title: 'Traditional Chest of Drawers',
-      desc: 'Classic design with multiple storage compartments'
-    },
-    {
-      src: 'IMAGES/WARDROBES/CV CC.jpg',
-      title: 'Modern Storage Solution',
-      desc: 'Contemporary appeal with practical design'
-    },
-    {
-      src: 'IMAGES/WARDROBES/DFG.jpg',
-      title: 'Elegant Wardrobe',
-      desc: 'Sophisticated styling for refined bedrooms'
-    },
-    {
-      src: 'IMAGES/WARDROBES/DFRT.jpg',
-      title: 'Luxury Wardrobe Collection',
-      desc: 'Premium materials and superior craftsmanship'
-    },
-    {
-      src: 'IMAGES/WARDROBES/hemnes-chest-of-6-drawers-skoyro-kafe-0[1].jpg',
-      title: 'Hemnes Chest of Drawers',
-      desc: 'Six-drawer design in natural wood finish'
-    },
-    {
-      src: 'IMAGES/WARDROBES/HGYU.jpg',
-      title: 'Contemporary Wardrobe',
-      desc: 'Modern design with ample storage space'
-    },
-    {
-      src: 'IMAGES/WARDROBES/Magnussen_Ashby_8_Drawer_Chest_2[1].jpg',
-      title: 'Magnussen Ashby Chest',
-      desc: 'Eight-drawer chest with premium finish'
-    },
-    {
-      src: 'IMAGES/WARDROBES/pine-furniture-pine-bedroom-furniture-parque-royal-pine-chest-of-drawers[1].jpg',
-      title: 'Pine Chest of Drawers',
-      desc: 'Natural pine finish with traditional styling'
-    },
-    {
-      src: 'IMAGES/WARDROBES/ZSER.jpg',
-      title: 'Modern Storage Wardrobe',
-      desc: 'Contemporary styling with practical features'
-    }
+    { src: 'IMAGES/WARDROBES/3-door-wardrobe-500x500[1].png', title: '3-door-wardrobe-500x500[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/4-030[1].jpg', title: '4-030[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/4-door-with-mirror[1].jpg', title: '4-door-with-mirror[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/7011671012_2dr_coffee[1].jpg', title: '7011671012_2dr_coffee[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/701-167-1016[1].jpg', title: '701-167-1016[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/71.jpg', title: '71', desc: '' },
+    { src: 'IMAGES/WARDROBES/71zOKvbqJ9L.jpg', title: '71zOKvbqJ9L', desc: '' },
+    { src: 'IMAGES/WARDROBES/930f0cb5caf002108990d14a1a89be72.jpg', title: '930f0cb5caf002108990d14a1a89be72', desc: '' },
+    { src: 'IMAGES/WARDROBES/BG.jpg', title: 'BG', desc: '' },
+    { src: 'IMAGES/WARDROBES/black-glass-chest-of-drawers-p41179-31306_zoom[1].jpg', title: 'black-glass-chest-of-drawers-p41179-31306_zoom[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/CH3.JPG', title: 'CH3', desc: '' },
+    { src: 'IMAGES/WARDROBES/CHARLES_1_DOOR_6_DRAWER_CHEST[1].jpg', title: 'CHARLES_1_DOOR_6_DRAWER_CHEST[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/CHEST OF DRAWERS.JPG', title: 'CHEST OF DRAWERS', desc: '' },
+    { src: 'IMAGES/WARDROBES/CV CC.jpg', title: 'CV CC', desc: '' },
+    { src: 'IMAGES/WARDROBES/DFG.jpg', title: 'DFG', desc: '' },
+    { src: 'IMAGES/WARDROBES/DFRT.jpg', title: 'DFRT', desc: '' },
+    { src: 'IMAGES/WARDROBES/hemnes-chest-of-6-drawers-skoyro-kafe-0[1].jpg', title: 'hemnes-chest-of-6-drawers-skoyro-kafe-0[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/HGYU.jpg', title: 'HGYU', desc: '' },
+    { src: 'IMAGES/WARDROBES/Magnussen_Ashby_8_Drawer_Chest_2[1].jpg', title: 'Magnussen_Ashby_8_Drawer_Chest_2[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/pine-furniture-pine-bedroom-furniture-parque-royal-pine-chest-of-drawers[1].jpg', title: 'pine-furniture-pine-bedroom-furniture-parque-royal-pine-chest-of-drawers[1]', desc: '' },
+    { src: 'IMAGES/WARDROBES/W1.png', title: 'W1', desc: '' },
+    { src: 'IMAGES/WARDROBES/W2.png', title: 'W2', desc: '' },
+    { src: 'IMAGES/WARDROBES/W3.png', title: 'W3', desc: '' },
+    { src: 'IMAGES/WARDROBES/W4.png', title: 'W4', desc: '' },
+    { src: 'IMAGES/WARDROBES/ZSER.jpg', title: 'ZSER', desc: '' },
   ],
-
+  sofaSets: [
+    { src: 'IMAGES/SOFA SETS/S1.png', title: 'S1', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S10.png', title: 'S10', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S11.png', title: 'S11', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S2.png', title: 'S2', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S3.png', title: 'S3', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S4.png', title: 'S4', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S5.png', title: 'S5', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S7.png', title: 'S7', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S8.png', title: 'S8', desc: '' },
+    { src: 'IMAGES/SOFA SETS/S9.png', title: 'S9', desc: '' },
+  ],
+  conferenceTables: [
+    { src: 'IMAGES/CONFERENCE TABLES/F1.png', title: 'F1', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F10.png', title: 'F10', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F2.png', title: 'F2', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F3.png', title: 'F3', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F4.png', title: 'F4', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F5.png', title: 'F5', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F6.jpg', title: 'F6', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F8.png', title: 'F8', desc: '' },
+    { src: 'IMAGES/CONFERENCE TABLES/F9.png', title: 'F9', desc: '' },
+  ],
+  conferenceChairs: [
+    { src: 'IMAGES/CONFERENCE CHAIRS/A27.png', title: 'A27', desc: '' },
+    { src: 'IMAGES/CONFERENCE CHAIRS/A37.png', title: 'A37', desc: '' },
+    { src: 'IMAGES/CONFERENCE CHAIRS/A71.png', title: 'A71', desc: '' },
+    { src: 'IMAGES/CONFERENCE CHAIRS/A73.png', title: 'A73', desc: '' },
+    { src: 'IMAGES/CONFERENCE CHAIRS/A74.png', title: 'A74', desc: '' },
+  ],
+  workStations: [
+    { src: 'IMAGES/WORK STATIONS/I1.png', title: 'I1', desc: '' },
+    { src: 'IMAGES/WORK STATIONS/I2.png', title: 'I2', desc: '' },
+    { src: 'IMAGES/WORK STATIONS/I3.png', title: 'I3', desc: '' },
+    { src: 'IMAGES/WORK STATIONS/I4.png', title: 'I4', desc: '' },
+    { src: 'IMAGES/WORK STATIONS/I5.png', title: 'I5', desc: '' },
+  ],
+  computerWorkStations: [
+    { src: 'IMAGES/COMPUTER WORK STATIONS/K1.png', title: 'K1', desc: '' },
+  ],
+  filingCabinets: [
+    { src: 'IMAGES/FILING CABINETS/G1.png', title: 'G1', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G10.png', title: 'G10', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G11.png', title: 'G11', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G2.png', title: 'G2', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G3.png', title: 'G3', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G4.png', title: 'G4', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G5.jpg', title: 'G5', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G6.png', title: 'G6', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G8.jpg', title: 'G8', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/G9.png', title: 'G9', desc: '' },
+    { src: 'IMAGES/FILING CABINETS/WhatsApp Image 2026-07-25 at 14.30.36.jpeg', title: 'WhatsApp Image 2026-07-25 at 14.30.36', desc: '' },
+  ],
+  studentSets: [
+    { src: 'IMAGES/STUDENTS SETS/WhatsApp Image 2026-07-25 at 14.30.37.jpeg', title: 'WhatsApp Image 2026-07-25 at 14.30.37', desc: '' },
+    { src: 'IMAGES/STUDENTS SETS/X1.png', title: 'X1', desc: '' },
+    { src: 'IMAGES/STUDENTS SETS/X2.png', title: 'X2', desc: '' },
+    { src: 'IMAGES/STUDENTS SETS/X3.png', title: 'X3', desc: '' },
+    { src: 'IMAGES/STUDENTS SETS/X4.png', title: 'X4', desc: '' },
+  ],
+  entertainmentUnits: [
+    { src: 'IMAGES/ENTERTAINMENT UNITS/J1.png', title: 'J1', desc: '' },
+    { src: 'IMAGES/ENTERTAINMENT UNITS/J2.png', title: 'J2', desc: '' },
+    { src: 'IMAGES/ENTERTAINMENT UNITS/J3.png', title: 'J3', desc: '' },
+  ],
+  executiveOfficeDesks: [
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D10.png', title: 'D10', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D11.png', title: 'D11', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D12.png', title: 'D12', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D13.png', title: 'D13', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D14.png', title: 'D14', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D15.png', title: 'D15', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D16.png', title: 'D16', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D2.png', title: 'D2', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D20.png', title: 'D20', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D21.jpg', title: 'D21', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D22.jpg', title: 'D22', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D23.png', title: 'D23', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D24.jpg', title: 'D24', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D25.jpg', title: 'D25', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D26.jpg', title: 'D26', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D27.png', title: 'D27', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D3.png', title: 'D3', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D4.png', title: 'D4', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D5.png', title: 'D5', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D6.png', title: 'D6', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D7.png', title: 'D7', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D8.png', title: 'D8', desc: '' },
+    { src: 'IMAGES/EXECUTIVE OFFICE DESKS/D9.png', title: 'D9', desc: '' },
+  ],
+  pedestalDesks: [
+    { src: 'IMAGES/PEDESTAL DESKS/P1.png', title: 'P1', desc: '' },
+    { src: 'IMAGES/PEDESTAL DESKS/P2.png', title: 'P2', desc: '' },
+    { src: 'IMAGES/PEDESTAL DESKS/P3.png', title: 'P3', desc: '' },
+    { src: 'IMAGES/PEDESTAL DESKS/P4.png', title: 'P4', desc: '' },
+    { src: 'IMAGES/PEDESTAL DESKS/P5.jpg', title: 'P5', desc: '' },
+  ],
+  receptionDesks: [
+    { src: 'IMAGES/RECEPTION DESKS/P6.png', title: 'P6', desc: '' },
+    { src: 'IMAGES/RECEPTION DESKS/R1.png', title: 'R1', desc: '' },
+    { src: 'IMAGES/RECEPTION DESKS/R2.png', title: 'R2', desc: '' },
+  ],
+  officeChairs: [
+    { src: 'IMAGES/OFFICE CHAIRS/A1.png', title: 'A1', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A10.png', title: 'A10', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A11.png', title: 'A11', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A12.png', title: 'A12', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A13.png', title: 'A13', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A18.png', title: 'A18', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A19.png', title: 'A19', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A20.png', title: 'A20', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A22.png', title: 'A22', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A23.png', title: 'A23', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A25.png', title: 'A25', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A26.png', title: 'A26', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A3.png', title: 'A3', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A4.png', title: 'A4', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A40.png', title: 'A40', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A46.png', title: 'A46', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A47.png', title: 'A47', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A48.png', title: 'A48', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A49.png', title: 'A49', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A5.png', title: 'A5', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A50.png', title: 'A50', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A51.png', title: 'A51', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A52.png', title: 'A52', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A53.png', title: 'A53', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A54.png', title: 'A54', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A55.png', title: 'A55', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A75.png', title: 'A75', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A76.png', title: 'A76', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A77.png', title: 'A77', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/A9.png', title: 'A9', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/V.png', title: 'V', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/V1.png', title: 'V1', desc: '' },
+    { src: 'IMAGES/OFFICE CHAIRS/V4.png', title: 'V4', desc: '' },
+  ],
+  visitorsBoardroomChairs: [
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A2.png', title: 'A2', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A21.png', title: 'A21', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A28.png', title: 'A28', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A31.png', title: 'A31', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A32.png', title: 'A32', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A34.png', title: 'A34', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A38.png', title: 'A38', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A39.png', title: 'A39', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A6.png', title: 'A6', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A65.png', title: 'A65', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A66.png', title: 'A66', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A67.png', title: 'A67', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A69.png', title: 'A69', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A70.png', title: 'A70', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/A72.jpg', title: 'A72', desc: '' },
+    { src: 'IMAGES/VISITORS & BOARDROOM CHAIRS/C5.png', title: 'C5', desc: '' },
+  ],
+  linkChairs: [
+    { src: 'IMAGES/LINK CHAIRS/C1.png', title: 'C1', desc: '' },
+    { src: 'IMAGES/LINK CHAIRS/C2.png', title: 'C2', desc: '' },
+    { src: 'IMAGES/LINK CHAIRS/C3.png', title: 'C3', desc: '' },
+    { src: 'IMAGES/LINK CHAIRS/C4.png', title: 'C4', desc: '' },
+    { src: 'IMAGES/LINK CHAIRS/C6.png', title: 'C6', desc: '' },
+    { src: 'IMAGES/LINK CHAIRS/C7.png', title: 'C7', desc: '' },
+    { src: 'IMAGES/LINK CHAIRS/C8.png', title: 'C8', desc: '' },
+  ],
+  catalinaChairs: [
+    { src: 'IMAGES/CATALINA CHAIRS/A15.png', title: 'A15', desc: '' },
+    { src: 'IMAGES/CATALINA CHAIRS/A17.png', title: 'A17', desc: '' },
+    { src: 'IMAGES/CATALINA CHAIRS/A43.png', title: 'A43', desc: '' },
+    { src: 'IMAGES/CATALINA CHAIRS/A44.png', title: 'A44', desc: '' },
+    { src: 'IMAGES/CATALINA CHAIRS/A45.png', title: 'A45', desc: '' },
+  ],
+  churchFurniture: [
+    { src: 'IMAGES/CHURCH FURNITURE/B1.png', title: 'B1', desc: '' },
+    { src: 'IMAGES/CHURCH FURNITURE/B2.png', title: 'B2', desc: '' },
+    { src: 'IMAGES/CHURCH FURNITURE/B3.png', title: 'B3', desc: '' },
+    { src: 'IMAGES/CHURCH FURNITURE/B4.png', title: 'B4', desc: '' },
+    { src: 'IMAGES/CHURCH FURNITURE/B5.png', title: 'B5', desc: '' },
+    { src: 'IMAGES/CHURCH FURNITURE/B6.png', title: 'B6', desc: '' },
+    { src: 'IMAGES/CHURCH FURNITURE/Y2.png', title: 'Y2', desc: '' },
+    { src: 'IMAGES/CHURCH FURNITURE/Y3.png', title: 'Y3', desc: '' },
+  ],
+  churchAssemblyChairs: [
+    { src: 'IMAGES/CHURCH & ASSEMBLY CHAIRS/A42.png', title: 'A42', desc: '' },
+    { src: 'IMAGES/CHURCH & ASSEMBLY CHAIRS/A7.png', title: 'A7', desc: '' },
+  ],
+  libraryShelves: [
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/T1.png', title: 'T1', desc: '' },
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/T2.png', title: 'T2', desc: '' },
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/T3.png', title: 'T3', desc: '' },
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/T4.png', title: 'T4', desc: '' },
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/T5.png', title: 'T5', desc: '' },
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/T6.png', title: 'T6', desc: '' },
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/T7.png', title: 'T7', desc: '' },
+    { src: 'IMAGES/LIBRARY & SUPERMARKET SHELVES/WhatsApp Image 2026-07-25 at 14.30.37 (1).jpeg', title: 'WhatsApp Image 2026-07-25 at 14.30.37 (1)', desc: '' },
+  ],
+  storageSafes: [
+    { src: 'IMAGES/STORAGE SAFES/K4.png', title: 'K4', desc: '' },
+    { src: 'IMAGES/STORAGE SAFES/K5.jpeg', title: 'K5', desc: '' },
+    { src: 'IMAGES/STORAGE SAFES/K6.png', title: 'K6', desc: '' },
+    { src: 'IMAGES/STORAGE SAFES/K7.png', title: 'K7', desc: '' },
+  ],
+  coatHangers: [
+    { src: 'IMAGES/COAT HANGERS/K2.png', title: 'K2', desc: '' },
+    { src: 'IMAGES/COAT HANGERS/WhatsApp Image 2026-08-20 at 13.39.22.jpeg', title: 'WhatsApp Image 2026-08-20 at 13.39.22', desc: '' },
+  ],
+  shoeRacks: [
+    { src: 'IMAGES/Shoe Racks/shoerack 1.jpg', title: 'shoerack 1', desc: '' },
+    { src: 'IMAGES/Shoe Racks/shoerack 2.jpg', title: 'shoerack 2', desc: '' },
+    { src: 'IMAGES/Shoe Racks/shoerack 3.jpg', title: 'shoerack 3', desc: '' },
+    { src: 'IMAGES/Shoe Racks/shoerack 4.jpg', title: 'shoerack 4', desc: '' },
+    { src: 'IMAGES/Shoe Racks/shoerack 5.jpg', title: 'shoerack 5', desc: '' },
+    { src: 'IMAGES/Shoe Racks/shoerack.jpg', title: 'shoerack', desc: '' },
+  ],
+  restaurantSeats: [
+    { src: 'IMAGES/RESTAURANT SEATS/A35.png', title: 'A35', desc: '' },
+    { src: 'IMAGES/RESTAURANT SEATS/A36.png', title: 'A36', desc: '' },
+    { src: 'IMAGES/RESTAURANT SEATS/A41.png', title: 'A41', desc: '' },
+  ],
+  rockingChairs: [
+    { src: 'IMAGES/ROCKING CHAIRS/A73.png', title: 'A73', desc: '' },
+  ],
+  benches: [
+    { src: 'IMAGES/BENCHES/BENCH.png', title: 'BENCH', desc: '' },
+  ],
   executiveChairs: {
     senior: [
       'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/++.JPG',
@@ -825,26 +453,27 @@ window.FracaGalleryData = {
       'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/LBO44-Photoroom (36).png',
       'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (38).png',
       'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (59).png',
-      'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (60).png'
+      'IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/white-Photoroom (60).png',
     ],
     orthopedic: [
       'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (26).png',
       'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (28).png',
       'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (37).png',
       'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (41).png',
-      'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (62).png'
-    ],
-    midBack: [
-      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/1.16.JPG',
-      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/LBO44-Photoroom (48).png',
-      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/white-Photoroom (50).png',
-      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/white-Photoroom (52).png'
+      'IMAGES/EXECUTIVE CHAIRS/ORTHOPEDIC HIGH BACK CHAIRS/LBO44-Photoroom (62).png',
     ],
     lowBack: [
       'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (58).png',
       'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (59).png',
       'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (60).png',
-      'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (61).png'
-    ]
+      'IMAGES/EXECUTIVE CHAIRS/LOW BACK CHAIRS/LBO44-Photoroom (61).png',
+    ],
+    midBack: [
+      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/1.16.JPG',
+      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/LBO44-Photoroom (48).png',
+      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/white-Photoroom (50).png',
+      'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/white-Photoroom (52).png',
+    ],
   }
 };
+

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entertainment units from Fraca Servcom Ltd — inquire for availability.">
+  <meta name="description" content="Entertainment Units from Fraca Servcom Ltd — browse our collection in Eldoret, Kenya.">
   <title>Fraca Servcom — Entertainment Units</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@0.460.0"></script>
+  <script src="theme-init.js"></script>
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -31,12 +32,13 @@
       <a href="index.html#contact" class="block py-3">Contact</a>
     </div>
   </header>
-  <section class="page-hero" style="background-image:linear-gradient(160deg,#1c1917,#3d2914);">
+  <section class="page-hero">
+    <img class="page-hero__media" src="IMAGES/ENTERTAINMENT UNITS/J1.png" alt="Fraca Servcom Entertainment Units" width="1600" height="900">
     <div class="page-hero__overlay"></div>
     <div class="page-hero__content">
       <p class="text-sm uppercase tracking-widest text-white/80 mb-2">Fraca Servcom</p>
       <h1>Entertainment Units</h1>
-      <p class="lead">TV and media units for living rooms and lounges.</p>
+      <p class="lead">Browse our Entertainment Units collection — inquire for pricing and availability.</p>
     </div>
   </section>
   <nav class="breadcrumbs" aria-label="Breadcrumb"><div class="container mx-auto px-4"><ol>
@@ -45,15 +47,8 @@
     <li class="current">Entertainment Units</li>
   </ol></div></nav>
   <main class="py-16"><div class="container mx-auto px-4">
-    <div class="coming-soon reveal">
-      <div class="coming-soon__icon"><i data-lucide="image" class="w-7 h-7"></i></div>
-      <h2>Coming Soon</h2>
-      <p>Photos for this collection are being prepared. Inquire for current stock, finishes, and pricing.</p>
-      <div class="coming-soon__actions">
-        <a href="https://wa.me/254725151495" class="btn btn-whatsapp"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
-        <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
-      </div>
-    </div>
+    <div class="text-center mb-10 reveal"><h2 class="section-title text-3xl text-stone-900">Entertainment Units</h2></div>
+    <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
   </div></main>
   <footer class="site-footer"><div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -63,6 +58,10 @@
     </div>
     <div class="site-footer__bottom"><p>&copy; <span data-year></span> Fraca Servcom Ltd. All rights reserved.</p></div>
   </div></footer>
+  <script src="gallery-data.js"></script>
   <script src="main.js"></script>
+  <script>
+    FracaGallery.init('#gallery', window.FracaGalleryData.entertainmentUnits, { categoryLabel: 'Entertainment Units' });
+  </script>
 </body>
 </html>
