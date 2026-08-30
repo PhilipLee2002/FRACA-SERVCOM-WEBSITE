@@ -303,6 +303,45 @@ body {
   font-weight: 500;
 }
 
+/* About leadership photo placeholder */
+.about-photo-placeholder {
+  min-height: 18rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface-elevated) 88%, var(--ink-muted));
+  padding: 2rem 1.5rem;
+}
+
+.about-photo-placeholder__inner {
+  text-align: center;
+  color: var(--ink-muted);
+  max-width: 16rem;
+}
+
+.about-photo-placeholder__inner [data-lucide] {
+  display: block;
+  margin: 0 auto 1rem;
+  color: var(--brand-red);
+  opacity: 0.9;
+}
+
+.about-photo-placeholder__title {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.about-photo-placeholder__note {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+}
+
 /* Sections */
 .section-title {
   position: relative;

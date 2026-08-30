@@ -60,10 +60,15 @@ Until that ID is set, the site shows a clear message and still offers email/What
 
 ## Deployment
 
-- **GitHub Pages:** enable Pages from the `main` branch root
-- **Netlify / Vercel:** connect the repo or drag-and-drop the folder
+Production app: [fraca-servcom-website](https://fraca-servcom-website.vercel.app) on Vercel. Custom domain: `fraca-servcom.app` (point the registrar A record `@` to `216.198.79.1`).
 
-On Linux/GitHub Pages, keep the furniture hub as lowercase `furniture.html` (already linked site-wide).
+```powershell
+npx plugins add vercel/vercel-plugin --target cursor --yes
+vercel link --yes --project fraca-servcom-website
+vercel --prod --yes
+```
+
+GitHub Pages and Netlify still work from the repo root. On Linux/GitHub Pages, keep the furniture hub as lowercase `furniture.html` (already linked site-wide).
 
 ## License
 

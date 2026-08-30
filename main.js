@@ -232,18 +232,28 @@
 
     if (!global.FracaLightbox) initLightbox();
 
+    function encodeImagePath(path) {
+      return String(path || "")
+        .split("/")
+        .map(function (segment) {
+          return encodeURIComponent(segment);
+        })
+        .join("/");
+    }
+
     list.forEach(function (item, index) {
       var label = options.categoryLabel || "Product";
       var title = item.title || label + " " + (index + 1);
       var desc = (item.desc || "").trim();
       var hasDesc = desc.length > 0;
       var alt = hasDesc ? title : label + " " + (index + 1);
+      var src = encodeImagePath(item.src);
       var card = document.createElement("div");
       card.className = "product-card reveal" + (hasDesc ? "" : " product-card--image-only");
       card.innerHTML =
         '<div class="product-card__media">' +
         '<img src="' +
-        item.src.replace(/"/g, "&quot;") +
+        src.replace(/"/g, "&quot;") +
         '" alt="' +
         alt.replace(/"/g, "&quot;") +
         '" loading="lazy" class="product-image">' +
@@ -258,7 +268,7 @@
 
       var img = card.querySelector("img");
       img.addEventListener("click", function () {
-        global.FracaLightbox.open(item.src, hasDesc ? title + " — " + desc : "");
+        global.FracaLightbox.open(src, hasDesc ? title + " — " + desc : "");
       });
       el.appendChild(card);
     });

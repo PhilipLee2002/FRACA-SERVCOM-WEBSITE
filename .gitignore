@@ -31,6 +31,8 @@ env/
 dist/
 build/
 .cache/
+.vercel/
+
 
 # Environment files
 .env
