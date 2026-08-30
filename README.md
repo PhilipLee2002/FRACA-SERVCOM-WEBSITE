@@ -60,7 +60,9 @@ Until that ID is set, the site shows a clear message and still offers email/What
 
 ## Deployment
 
-Production app: [fraca-servcom-website](https://fraca-servcom-website.vercel.app) on Vercel. Custom domain: `fraca-servcom.app` (point the registrar A record `@` to `216.198.79.1`).
+Live site: [fracaservcom.co.ke](https://fracaservcom.co.ke) (Vercel).
+
+Pushes to `main` on GitHub deploy automatically. To deploy from the CLI:
 
 ```powershell
 npx plugins add vercel/vercel-plugin --target cursor --yes
