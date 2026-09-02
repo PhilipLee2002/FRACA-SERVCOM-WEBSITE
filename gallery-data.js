@@ -274,9 +274,6 @@
     { src: 'IMAGES/WORK STATIONS/I4.png', title: 'I4', desc: '' },
     { src: 'IMAGES/WORK STATIONS/I5.png', title: 'I5', desc: '' },
   ],
-  computerWorkStations: [
-    { src: 'IMAGES/COMPUTER WORK STATIONS/K1.png', title: 'K1', desc: '' },
-  ],
   filingCabinets: [
     { src: 'IMAGES/FILING CABINETS/G1.png', title: 'G1', desc: '' },
     { src: 'IMAGES/FILING CABINETS/G10.png', title: 'G10', desc: '' },

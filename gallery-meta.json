@@ -97,13 +97,6 @@
                     "page":  "Benches.html",
                     "count":  3
                 },
-    "computerWorkStations":  {
-                                 "title":  "Computer Workstations",
-                                 "hero":  null,
-                                 "folder":  "COMPUTER WORK STATIONS",
-                                 "page":  "Computer-workstations.html",
-                                 "count":  3
-                             },
     "storageSafes":  {
                          "title":  "Storage Safes",
                          "hero":  "IMAGES/STORAGE SAFES/K4.png",

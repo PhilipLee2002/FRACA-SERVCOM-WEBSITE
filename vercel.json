@@ -7,6 +7,16 @@
       "source": "/Pulpits",
       "destination": "/Church-furniture",
       "permanent": true
+    },
+    {
+      "source": "/Computer-workstations",
+      "destination": "/furniture",
+      "permanent": true
+    },
+    {
+      "source": "/Office-partitioning",
+      "destination": "/furniture",
+      "permanent": true
     }
   ]
 }
