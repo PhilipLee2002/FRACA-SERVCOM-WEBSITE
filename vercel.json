@@ -1,7 +1,14 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/Pulpits",
+      "destination": "/Church-furniture",
+      "permanent": true
+    }
+  ]
 }
 
 

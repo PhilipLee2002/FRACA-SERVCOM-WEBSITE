@@ -27,7 +27,7 @@ LICENSE
 
 ### Live galleries (photos in `IMAGES/`)
 
-32 categories including beds, office chairs, executive chairs, reception desks, pedestal desks, conference tables, sofa sets, filing cabinets, and more. See `furniture.html` for the full catalog.
+31 categories including beds, office chairs, executive chairs, reception desks, pedestal desks, conference tables, sofa sets, filing cabinets, and more. See `furniture.html` for the full catalog.
 
 Regenerate `gallery-data.js` after adding images: run a folder scan script or add entries manually to match folder names under `IMAGES/`.
 

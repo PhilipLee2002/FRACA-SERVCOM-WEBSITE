@@ -22,10 +22,10 @@
                              },
     "diningSets":  {
                        "title":  "Dining Sets",
-                       "hero":  "IMAGES/DINING SETS/0002540_5-piece-dining-table-set-cherry-finish[1].jpg",
+                       "hero":  "IMAGES/DINING SETS/dining-furniture-01.png",
                        "folder":  "DINING SETS",
                        "page":  "Dining-sets.html",
-                       "count":  49
+                       "count":  55
                    },
     "executiveChairs":  {
                             "title":  "Executive Chairs",
@@ -64,10 +64,10 @@
                         },
     "dressingMirrors":  {
                             "title":  "Dressing Mirrors",
-                            "hero":  "IMAGES/DRESSING MIRRORS/DM-41.JPG",
+                            "hero":  "IMAGES/DRESSING MIRRORS/dressing-mirror-furniture-01.png",
                             "folder":  "DRESSING MIRRORS",
                             "page":  "Dressing-mirrors.html",
-                            "count":  11
+                            "count":  14
                         },
     "filingCabinets":  {
                            "title":  "Filing Cabinets",
@@ -113,10 +113,10 @@
                      },
     "beds":  {
                  "title":  "Beds",
-                 "hero":  "IMAGES/EXECUTIVE BEDS/_211[1].jpg",
+                 "hero":  "IMAGES/EXECUTIVE BEDS/bed-furniture-01.png",
                  "folder":  "EXECUTIVE BEDS",
                  "page":  "Beds.html",
-                 "count":  38
+                 "count":  44
              },
     "utilityChairs":  {
                           "title":  "Utility Chairs",
@@ -144,7 +144,7 @@
                             "hero":  "IMAGES/CHURCH FURNITURE/B1.png",
                             "folder":  "CHURCH FURNITURE",
                             "page":  "Church-furniture.html",
-                            "count":  8
+                            "count":  19
                         },
     "coatHangers":  {
                         "title":  "Coat Hangers",
@@ -181,19 +181,12 @@
                            "page":  "Catalina-chairs.html",
                            "count":  5
                        },
-    "pulpits":  {
-                    "title":  "Pulpits",
-                    "hero":  "IMAGES/PULPITS/EIGHT.png",
-                    "folder":  "PULPITS",
-                    "page":  "Pulpits.html",
-                    "count":  11
-                },
     "wardrobes":  {
                       "title":  "Wardrobes",
-                      "hero":  "IMAGES/WARDROBES/3-door-wardrobe-500x500[1].png",
+                      "hero":  "IMAGES/WARDROBES/wardrobe-furniture-01.png",
                       "folder":  "WARDROBES",
                       "page":  "Wardrobes.html",
-                      "count":  25
+                      "count":  33
                   },
     "workStations":  {
                          "title":  "Workstations",
@@ -204,10 +197,10 @@
                      },
     "coffeeTables":  {
                          "title":  "Coffee Tables",
-                         "hero":  "IMAGES/COFFEE TABLES/CT-10.JPG",
+                         "hero":  "IMAGES/COFFEE TABLES/coffee-furniture-01.png",
                          "folder":  "COFFEE TABLES",
                          "page":  "Coffee-tables.html",
-                         "count":  20
+                         "count":  22
                      },
     "libraryShelves":  {
                            "title":  "Library \u0026 Supermarket Shelves",
