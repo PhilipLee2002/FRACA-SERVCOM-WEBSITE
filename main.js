@@ -10,6 +10,77 @@
     }
   }
 
+  function escapeHtml(value) {
+    return String(value || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+  }
+
+  function productTypeName(categoryLabel) {
+    var label = String(categoryLabel || "Product").trim();
+    var key = label.toLowerCase();
+    var named = {
+      "executive office desks": "Desk",
+      "pedestal desks": "Pedestal Desk",
+      "reception desks": "Reception Desk",
+      "student desks": "Student Desk",
+      "coffee tables": "Coffee Table",
+      "conference tables": "Conference Table",
+      "dining sets": "Dining Set",
+      "dressing mirrors": "Mirror",
+      "church furniture": "Church Furniture",
+      "utility chairs": "Chair",
+      "office chairs": "Office Chair",
+      "conference chairs": "Conference Chair",
+      "visitors & boardroom chairs": "Chair",
+      "link chairs": "Link Chair",
+      "catalina chairs": "Catalina Chair",
+      "church & assembly chairs": "Chair",
+      "senior executive high back chairs": "Chair",
+      "orthopedic high back chairs": "Chair",
+      "mid back chairs": "Chair",
+      "low back chairs": "Chair",
+      "restaurant seats": "Seat",
+      "rocking chairs": "Rocking Chair",
+      "wardrobes": "Wardrobe",
+      "sofa sets": "Sofa",
+      "workstations": "Workstation",
+      "filing cabinets": "Cabinet",
+      "entertainment units": "Entertainment Unit",
+      "library & supermarket shelves": "Shelf",
+      "storage safes": "Safe",
+      "coat hangers": "Coat Hanger",
+      "shoe racks": "Shoe Rack",
+      "beds": "Bed",
+      "benches": "Bench",
+    };
+    if (named[key]) return named[key];
+
+    var last = (label.split(/[&/]| and /i).pop() || label).trim().split(/\s+/).pop() || "Item";
+    if (/ies$/i.test(last)) return last.replace(/ies$/i, "y");
+    if (/s$/i.test(last) && !/ss$/i.test(last)) return last.replace(/s$/i, "");
+    return last;
+  }
+
+  function numberedProductName(typeName, number) {
+    return typeName + " " + String(number || 1);
+  }
+
+  function humanizeProductTitle(_raw, categoryLabel, index) {
+    return numberedProductName(productTypeName(categoryLabel), index + 1);
+  }
+
+  var WA_GLYPH =
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.219-1.11a7.9 7.9 0 0 0 3.78.96h.003c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 2.729 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.486-1.353-.564-.182-.078-.315-.117-.445.117-.133.233-.513.564-.627.678-.115.114-.232.127-.43.042-.197-.084-.836-.308-1.592-.985-.59-.525-.987-1.176-1.103-1.377-.117-.198-.012-.305.088-.403.091-.091.197-.232.296-.346.1-.114.132-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.61-1.47-.16-.389-.323-.335-.445-.34-.112-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.693.677-.693 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.127.418.475.152.904.13 1.245.08.38-.058 1.171-.48 1.338-.941.164-.46.164-.855.114-.941-.049-.084-.182-.133-.38-.232"/></svg>';
+
+  function inquireUrl(title, categoryLabel) {
+    var message =
+      "Hello Fraca Servcom, I am interested in " +
+      title +
+      " (" +
+      (categoryLabel || "your furniture") +
+      "). Please share availability and pricing.";
+    return "https://wa.me/254725151495?text=" + encodeURIComponent(message);
+  }
+
   function initTheme() {
     var root = document.documentElement;
     var KEY = "fraca-theme";
@@ -33,14 +104,14 @@
       setTheme(isDark() ? "light" : "dark");
     }
 
-    function makeToggle(className) {
+    function makeToggle() {
       var btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "theme-toggle" + (className ? " " + className : "");
+      btn.className = "theme-toggle";
       btn.addEventListener("click", toggleTheme);
       var icon = document.createElement("i");
       icon.setAttribute("data-lucide", isDark() ? "sun" : "moon");
-      icon.className = "w-5 h-5";
+      icon.setAttribute("stroke-width", "2.25");
       btn.appendChild(icon);
       return btn;
     }
@@ -52,29 +123,14 @@
         var icon = btn.querySelector("[data-lucide]");
         if (icon) {
           icon.setAttribute("data-lucide", isDark() ? "sun" : "moon");
+          icon.setAttribute("stroke-width", "2.25");
         }
       });
     }
 
-    var nav = document.querySelector(".site-header nav");
-    if (nav && nav.classList.contains("hidden")) {
-      var whatsapp = nav.querySelector(".btn-whatsapp");
-      var desktopToggle = makeToggle("hidden md:inline-flex");
-      if (whatsapp) {
-        nav.insertBefore(desktopToggle, whatsapp);
-      } else {
-        nav.appendChild(desktopToggle);
-      }
-    }
-
-    var menuToggle = document.getElementById("menu-toggle");
-    if (menuToggle) {
-      var mobileToggle = makeToggle("md:hidden");
-      var actions = menuToggle.parentElement;
-      if (actions && !actions.classList.contains("header-actions")) {
-        actions.classList.add("header-actions");
-      }
-      menuToggle.parentNode.insertBefore(mobileToggle, menuToggle);
+    var actions = document.querySelector(".site-header .header-actions");
+    if (actions && !actions.querySelector(".theme-toggle")) {
+      actions.insertBefore(makeToggle(), actions.firstChild);
     }
 
     syncToggles();
@@ -243,32 +299,37 @@
 
     list.forEach(function (item, index) {
       var label = options.categoryLabel || "Product";
-      var title = item.title || label + " " + (index + 1);
+      var title = humanizeProductTitle(item.title, label, index);
       var desc = (item.desc || "").trim();
-      var hasDesc = desc.length > 0;
-      var alt = hasDesc ? title : label + " " + (index + 1);
       var src = encodeImagePath(item.src);
+      var wa = inquireUrl(title, label);
       var card = document.createElement("div");
-      card.className = "product-card reveal" + (hasDesc ? "" : " product-card--image-only");
+      card.className = "product-card reveal";
       card.innerHTML =
         '<div class="product-card__media">' +
         '<img src="' +
-        src.replace(/"/g, "&quot;") +
+        escapeHtml(src) +
         '" alt="' +
-        alt.replace(/"/g, "&quot;") +
+        escapeHtml(title) +
         '" loading="lazy" class="product-image">' +
         "</div>" +
-        (hasDesc
-          ? '<div class="product-card__body"><h3>' +
-            title.replace(/</g, "&lt;") +
-            "</h3><p>" +
-            desc.replace(/</g, "&lt;") +
-            "</p></div>"
-          : "");
+        '<div class="product-card__body">' +
+        "<h3>" +
+        escapeHtml(title) +
+        "</h3>" +
+        (desc ? "<p>" + escapeHtml(desc) + "</p>" : "") +
+        '<a class="product-card__inquire" href="' +
+        wa.replace(/"/g, "&quot;") +
+        '" target="_blank" rel="noopener noreferrer" aria-label="Inquire about ' +
+        escapeHtml(title) +
+        ' on WhatsApp">' +
+        WA_GLYPH +
+        " Inquire</a>" +
+        "</div>";
 
       var img = card.querySelector("img");
       img.addEventListener("click", function () {
-        global.FracaLightbox.open(src, hasDesc ? title + " — " + desc : "");
+        global.FracaLightbox.open(src, desc ? title + " — " + desc : title);
       });
       el.appendChild(card);
     });
