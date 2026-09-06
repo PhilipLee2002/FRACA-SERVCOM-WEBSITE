@@ -68,16 +68,75 @@
     return numberedProductName(productTypeName(categoryLabel), index + 1);
   }
 
+  var SITE_ORIGIN = "https://fracaservcom.co.ke";
+
+  function slugifyId(value) {
+    var slug = String(value || "item")
+      .toLowerCase()
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+    return slug || "item";
+  }
+
+  function uniqueProductId(title, container) {
+    var base = slugifyId(title);
+    if (!document.getElementById(base)) return base;
+    var prefix = container && container.id ? slugifyId(container.id) : "item";
+    var next = prefix + "-" + base;
+    var n = 2;
+    while (document.getElementById(next)) {
+      next = prefix + "-" + base + "-" + n;
+      n += 1;
+    }
+    return next;
+  }
+
+  function currentProductPagePath() {
+    var path = String((global.location && location.pathname) || "/");
+    path = path.replace(/index\.html$/i, "").replace(/\.html$/i, "");
+    if (!path || path.charAt(0) !== "/") path = "/" + path;
+    if (path.length > 1 && path.slice(-1) === "/") path = path.slice(0, -1);
+    return path || "/";
+  }
+
+  function productShareUrl(anchorId) {
+    return SITE_ORIGIN + currentProductPagePath() + "#" + anchorId;
+  }
+
+  function scrollToProductHash() {
+    var raw = String((global.location && location.hash) || "").replace(/^#/, "");
+    if (!raw) return false;
+    var id = decodeURIComponent(raw);
+    var target = document.getElementById(id);
+    if (!target) return false;
+    document.querySelectorAll(".product-card.is-anchored").forEach(function (card) {
+      if (card !== target) card.classList.remove("is-anchored");
+    });
+    target.classList.add("show", "is-anchored");
+    target.scrollIntoView({ block: "start" });
+    return true;
+  }
+
+  function scheduleProductHashScroll() {
+    if (scrollToProductHash()) return;
+    requestAnimationFrame(function () {
+      if (scrollToProductHash()) return;
+      setTimeout(scrollToProductHash, 60);
+    });
+  }
+
   var WA_GLYPH =
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.219-1.11a7.9 7.9 0 0 0 3.78.96h.003c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 2.729 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.486-1.353-.564-.182-.078-.315-.117-.445.117-.133.233-.513.564-.627.678-.115.114-.232.127-.43.042-.197-.084-.836-.308-1.592-.985-.59-.525-.987-1.176-1.103-1.377-.117-.198-.012-.305.088-.403.091-.091.197-.232.296-.346.1-.114.132-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.61-1.47-.16-.389-.323-.335-.445-.34-.112-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.693.677-.693 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.127.418.475.152.904.13 1.245.08.38-.058 1.171-.48 1.338-.941.164-.46.164-.855.114-.941-.049-.084-.182-.133-.38-.232"/></svg>';
 
-  function inquireUrl(title, categoryLabel) {
+  function inquireUrl(title, categoryLabel, productUrl) {
     var message =
       "Hello Fraca Servcom, I am interested in " +
       title +
       " (" +
       (categoryLabel || "your furniture") +
       "). Please share availability and pricing.";
+    if (productUrl) message += "\n\n" + productUrl;
     return "https://wa.me/254725151495?text=" + encodeURIComponent(message);
   }
 
@@ -302,9 +361,12 @@
       var title = humanizeProductTitle(item.title, label, index);
       var desc = (item.desc || "").trim();
       var src = encodeImagePath(item.src);
-      var wa = inquireUrl(title, label);
+      var anchorId = uniqueProductId(title, el);
+      var productUrl = productShareUrl(anchorId);
+      var wa = inquireUrl(title, label, productUrl);
       var card = document.createElement("div");
       card.className = "product-card reveal";
+      card.id = anchorId;
       card.innerHTML =
         '<div class="product-card__media">' +
         '<img src="' +
@@ -336,6 +398,7 @@
 
     createIcons();
     initReveal();
+    scheduleProductHashScroll();
   }
 
   /**
@@ -446,6 +509,7 @@
     initLightbox();
     initReveal();
     initContactForm();
+    global.addEventListener("hashchange", scheduleProductHashScroll);
   }
 
   if (document.readyState === "loading") {

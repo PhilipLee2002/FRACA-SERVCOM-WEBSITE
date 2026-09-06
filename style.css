@@ -456,6 +456,12 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 5.5rem;
+}
+
+.product-card:target,
+.product-card.is-anchored {
+  box-shadow: 0 0 0 2px var(--brand-red), var(--shadow-soft);
 }
 
 .product-card:hover {
