@@ -1,4 +1,11 @@
 ﻿{
+    "bags":  {
+                 "title":  "Bags",
+                 "hero":  "IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-1.png",
+                 "folder":  "BAGS",
+                 "page":  "Bags.html",
+                 "count":  42
+             },
     "sofaSets":  {
                      "title":  "Sofa Sets",
                      "hero":  "IMAGES/SOFA SETS/Sofa-1.png",

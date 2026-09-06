@@ -4,7 +4,7 @@ Responsive static website for Fraca Servcom Ltd (Eldoret, Kenya) showcasing furn
 
 ## Features
 
-- Landing page with full-bleed product hero, about, divisions, testimonials, bags (coming soon), and contact form
+- Landing page with full-bleed product hero, about, divisions, testimonials, bags gallery, and contact form
 - Furniture hub (`furniture.html`) with live collections and **Coming soon** categories
 - Shared gallery + lightbox (`gallery-data.js` + `FracaGallery` in `main.js`)
 - Contact form ready for [Formspree](https://formspree.io) (WhatsApp CTA always available)

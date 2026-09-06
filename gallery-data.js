@@ -494,6 +494,74 @@
       'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/Chair-3.png',
       'IMAGES/EXECUTIVE CHAIRS/MID BACK CHAIRS/Chair-4.png',
     ],
-  }
+  },
+  bags: {
+    ladiesHandbagsLb001: [
+      { src: 'IMAGES/BAGS/LB001/ladies-hand-bag-8.png', title: 'ladies-hand-bag-8', desc: '' },
+      { src: 'IMAGES/BAGS/LB001/ladies-hand-bag-9.png', title: 'ladies-hand-bag-9', desc: '' },
+      { src: 'IMAGES/BAGS/LB001/ladies-hand-bag-10.png', title: 'ladies-hand-bag-10', desc: '' },
+      { src: 'IMAGES/BAGS/LB001/ladies-hand-bag-11.png', title: 'ladies-hand-bag-11', desc: '' },
+      { src: 'IMAGES/BAGS/LB001/ladies-hand-bag-12.png', title: 'ladies-hand-bag-12', desc: '' },
+      { src: 'IMAGES/BAGS/LB001/ladies-hand-bag-13.png', title: 'ladies-hand-bag-13', desc: '' },
+      { src: 'IMAGES/BAGS/LB001/ladies-hand-bags-16.png', title: 'ladies-hand-bags-16', desc: '' },
+    ],
+    ladiesHandbagsLb002: [
+      { src: 'IMAGES/BAGS/LB002/lb002-01.png', title: 'lb002-01', desc: '' },
+      { src: 'IMAGES/BAGS/LB002/lb002-02.png', title: 'lb002-02', desc: '' },
+    ],
+    classicTotes: [
+      { src: 'IMAGES/BAGS/CLASSIC TOTES/ladies-hand-bag-4.png', title: 'ladies-hand-bag-4', desc: '' },
+      { src: 'IMAGES/BAGS/CLASSIC TOTES/ladies-hand-bag-5.png', title: 'ladies-hand-bag-5', desc: '' },
+      { src: 'IMAGES/BAGS/CLASSIC TOTES/ladies-hand-bag-6.png', title: 'ladies-hand-bag-6', desc: '' },
+    ],
+    toteBucketBags: [
+      { src: 'IMAGES/BAGS/TOTE BUCKET BAGS/tote-bucket-bags-01.png', title: 'tote-bucket-bags-01', desc: '' },
+      { src: 'IMAGES/BAGS/TOTE BUCKET BAGS/tote-bucket-bags-02.png', title: 'tote-bucket-bags-02', desc: '' },
+    ],
+    toteSquareBags: [
+      { src: 'IMAGES/BAGS/TOTE SQUARE BAGS/tote-square-1.png', title: 'tote-square-1', desc: '' },
+      { src: 'IMAGES/BAGS/TOTE SQUARE BAGS/tote-square-2.png', title: 'tote-square-2', desc: '' },
+    ],
+    monkeyBags: [
+      { src: 'IMAGES/BAGS/MONKEY BAGS/b1.png', title: 'b1', desc: '' },
+      { src: 'IMAGES/BAGS/MONKEY BAGS/b2.png', title: 'b2', desc: '' },
+      { src: 'IMAGES/BAGS/MONKEY BAGS/b3.png', title: 'b3', desc: '' },
+      { src: 'IMAGES/BAGS/MONKEY BAGS/b4.png', title: 'b4', desc: '' },
+    ],
+    slingBags: [
+      { src: 'IMAGES/BAGS/SLING BAGS/sling-bag-1.png', title: 'sling-bag-1', desc: '' },
+      { src: 'IMAGES/BAGS/SLING BAGS/sling-bag-2.png', title: 'sling-bag-2', desc: '' },
+      { src: 'IMAGES/BAGS/SLING BAGS/sling-bag-4.png', title: 'sling-bag-4', desc: '' },
+      { src: 'IMAGES/BAGS/SLING BAGS/sling-bag-5.png', title: 'sling-bag-5', desc: '' },
+    ],
+    manBags: [
+      { src: 'IMAGES/BAGS/MANBAGS/sleek-black-leather-messenger-bag.png', title: 'sleek-black-leather-messenger-bag', desc: '' },
+      { src: 'IMAGES/BAGS/MANBAGS/dark-brown-leather-man-bag.png', title: 'dark-brown-leather-man-bag', desc: '' },
+      { src: 'IMAGES/BAGS/MANBAGS/chocolate-brown-leather-messenger-bag-1.png', title: 'chocolate-brown-leather-messenger-bag-1', desc: '' },
+      { src: 'IMAGES/BAGS/MANBAGS/leather-crossbody-bag-with-brass-details.png', title: 'leather-crossbody-bag-with-brass-details', desc: '' },
+    ],
+    travellingBags: [
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-1.png', title: 'travelling-bag-1', desc: '' },
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-2.png', title: 'travelling-bag-2', desc: '' },
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-3.png', title: 'travelling-bag-3', desc: '' },
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-4.png', title: 'travelling-bag-4', desc: '' },
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-5.png', title: 'travelling-bag-5', desc: '' },
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-6.png', title: 'travelling-bag-6', desc: '' },
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-7.png', title: 'travelling-bag-7', desc: '' },
+      { src: 'IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-8.png', title: 'travelling-bag-8', desc: '' },
+    ],
+    backpacks: [
+      { src: 'IMAGES/BAGS/BACKPACKS/back-pack-1.png', title: 'back-pack-1', desc: '' },
+      { src: 'IMAGES/BAGS/BACKPACKS/back-pack-2.png', title: 'back-pack-2', desc: '' },
+    ],
+    laptopBags: [
+      { src: 'IMAGES/BAGS/LAPTOP BAGS/laptop-bag-1.png', title: 'laptop-bag-1', desc: '' },
+      { src: 'IMAGES/BAGS/LAPTOP BAGS/laptop-bag-2.png', title: 'laptop-bag-2', desc: '' },
+    ],
+    documentationBags: [
+      { src: 'IMAGES/BAGS/DOCUMENTATION BAGS/documentation-bag-2-1.png', title: 'documentation-bag-2-1', desc: '' },
+      { src: 'IMAGES/BAGS/DOCUMENTATION BAGS/documentation-bag-2-2.png', title: 'documentation-bag-2-2', desc: '' },
+    ],
+  },
 };
 
