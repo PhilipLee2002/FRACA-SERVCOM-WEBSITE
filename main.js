@@ -347,6 +347,18 @@
     });
   }
 
+  function contactEndpoint(form) {
+    var action = form.getAttribute("action") || "/api/contact";
+    var base = (form.getAttribute("data-api-base") || global.FRACA_API_BASE || "").replace(/\/$/, "");
+    if (!base) return action;
+    return action.indexOf("http") === 0 ? action : base + (action.charAt(0) === "/" ? action : "/" + action);
+  }
+
+  function fieldValue(form, name) {
+    var el = form.elements.namedItem(name);
+    return el && typeof el.value === "string" ? el.value.trim() : "";
+  }
+
   function initContactForm() {
     var form = document.getElementById("contact-form");
     if (!form) return;
@@ -354,34 +366,59 @@
     var status = document.getElementById("form-status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var action = form.getAttribute("action") || "";
-      if (action.indexOf("YOUR_FORM_ID") !== -1 || action.indexOf("YOUR_ID") !== -1) {
-        if (status) {
-          status.className = "form-status is-error";
-          status.textContent =
-            "Form is not configured yet. Please email fracaservcomltd@yahoo.com or WhatsApp us, or replace YOUR_FORM_ID in the form action with your Formspree ID.";
+
+      var submitBtn = form.querySelector('[type="submit"]');
+      var endpoint = contactEndpoint(form);
+      var payload = {
+        name: fieldValue(form, "name"),
+        email: fieldValue(form, "email"),
+        subject: fieldValue(form, "subject"),
+        phone: fieldValue(form, "phone"),
+        message: fieldValue(form, "message"),
+        website: fieldValue(form, "website"),
+      };
+
+      if (status) {
+        status.className = "form-status";
+        status.textContent = "";
+      }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        if (!submitBtn.getAttribute("data-label")) {
+          submitBtn.setAttribute("data-label", submitBtn.textContent);
         }
-        return;
+        submitBtn.textContent = "Sending…";
       }
 
-      var data = new FormData(form);
-      var submitBtn = form.querySelector('[type="submit"]');
-      if (submitBtn) submitBtn.disabled = true;
-
-      fetch(action, {
+      fetch(endpoint, {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { Accept: "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       })
         .then(function (res) {
-          if (res.ok) {
+          return res.json().then(
+            function (body) {
+              return { ok: res.ok, body: body || {} };
+            },
+            function () {
+              return { ok: res.ok, body: {} };
+            }
+          );
+        })
+        .then(function (result) {
+          if (result.ok && result.body.ok !== false) {
             form.reset();
             if (status) {
               status.className = "form-status is-success";
               status.textContent = "Thank you — your message has been sent.";
             }
-          } else {
-            throw new Error("Submit failed");
+            return;
+          }
+          if (status) {
+            status.className = "form-status is-error";
+            status.textContent =
+              result.body.error ||
+              "Something went wrong. Please try WhatsApp or email us directly.";
           }
         })
         .catch(function () {
@@ -392,7 +429,10 @@
           }
         })
         .finally(function () {
-          if (submitBtn) submitBtn.disabled = false;
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = submitBtn.getAttribute("data-label") || "Send Message";
+          }
         });
     });
   }

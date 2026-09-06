@@ -726,10 +726,19 @@ body {
 
 /* Forms */
 .form-panel {
+  position: relative;
   background: var(--surface-elevated);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.5rem;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .form-panel label {

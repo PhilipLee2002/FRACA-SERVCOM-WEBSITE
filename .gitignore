@@ -37,6 +37,10 @@ build/
 # Environment files
 .env
 .env.*
+!.env.example
+
+# Local contact inquiry store
+data/*.jsonl
 
 # Logs
 logs/
