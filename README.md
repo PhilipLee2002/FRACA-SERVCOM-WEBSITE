@@ -58,7 +58,7 @@ The form on `index.html` posts to `/api/contact` on the same origin (Vercel serv
 2. In the Vercel project, set:
 
 - `RESEND_API_KEY`
-- `CONTACT_TO_EMAIL=fracaservcomltd@yahoo.com`
+- `CONTACT_TO_EMAIL=info@fracaservcomltd.co.ke`
 - `CONTACT_FROM_EMAIL=Fraca Servcom Ltd <noreply@fracaservcom.co.ke>`
 
 Until the domain is verified, Resend’s test sender (`beth.t@example.com`) only delivers to the account owner. Do not set `CONTACT_STORE=file` on Vercel (the filesystem is not a database).

@@ -4,7 +4,7 @@ All content in this repository (including code, images, product photos, logos, d
 
 - Copyright: © Fraca Servcom Ltd. All rights reserved.
 
-Requests for permission to use any material from this repository must be made in writing to Fraca Servcom Ltd (fracaservcomltd@yahoo.com).
+Requests for permission to use any material from this repository must be made in writing to Fraca Servcom Ltd (info@fracaservcomltd.co.ke).
 
 Notes:
 - Consider removing high-resolution original photos from the public repository if you want to restrict distribution (use low-res web-optimized images instead).

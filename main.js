@@ -341,9 +341,48 @@
     },
     {
       group: "Bags",
-      items: [{ name: "Bags Division", href: "Bags.html", keywords: "bag handbag backpack tote travel" }],
+      items: [{ name: "Bags Division", href: "Bags.html", keywords: "bag bags handbag backpack tote travel fos" }],
     },
   ];
+
+  var GALLERY_PAGES = {
+    beds: "Beds.html",
+    coffeeTables: "Coffee-tables.html",
+    diningSets: "Dining-sets.html",
+    dressingMirrors: "Dressing-mirrors.html",
+    churchFurniture: "Church-furniture.html",
+    wardrobes: "Wardrobes.html",
+    sofaSets: "Sofa-sets.html",
+    conferenceTables: "Conference-tables.html",
+    conferenceChairs: "Conference-chairs.html",
+    workStations: "Workstations.html",
+    filingCabinets: "Filing-cabinets.html",
+    studentSets: "Student-desks.html",
+    entertainmentUnits: "Entertainment-units.html",
+    executiveOfficeDesks: "Executive-tables.html",
+    pedestalDesks: "Pedestal-desks.html",
+    receptionDesks: "Reception-desks.html",
+    officeChairs: "Office-chairs.html",
+    visitorsBoardroomChairs: "Visitors-boardroom-chairs.html",
+    linkChairs: "Link-chairs.html",
+    catalinaChairs: "Catalina-chairs.html",
+    libraryShelves: "Library-shelves.html",
+    storageSafes: "Storage-safes.html",
+    coatHangers: "Coat-hangers.html",
+    shoeRacks: "Shoe-racks.html",
+    restaurantSeats: "Restaurant-seats.html",
+    rockingChairs: "Rocking-chairs.html",
+    benches: "Benches.html",
+    executiveChairs: "Executive-chairs.html",
+    bags: "Bags.html",
+  };
+
+  function currentCatalogFile() {
+    var path = String((global.location && location.pathname) || "");
+    var file = path.split("/").pop() || "";
+    if (!file || file === "/") return "index.html";
+    return file;
+  }
 
   function flatCatalogItems() {
     var list = [];
@@ -355,49 +394,292 @@
     return list;
   }
 
-  function findCatalogMatch(query) {
-    var q = String(query || "")
-      .toLowerCase()
-      .trim();
-    if (!q) return null;
-    var items = flatCatalogItems();
-    var exact = items.find(function (item) {
-      return item.name.toLowerCase() === q;
-    });
-    if (exact) return exact;
+  function currentCatalogItem() {
+    var file = currentCatalogFile().toLowerCase();
     return (
-      items.find(function (item) {
-        var hay = (item.name + " " + (item.keywords || "")).toLowerCase();
-        return hay.indexOf(q) !== -1 || q.split(/\s+/).every(function (part) {
-          return part && hay.indexOf(part) !== -1;
-        });
+      flatCatalogItems().find(function (item) {
+        return item.href.toLowerCase() === file;
       }) || null
     );
   }
 
-  function applyProductCardFilter(query) {
-    var q = String(query || "")
+  function normalizeSearch(value) {
+    return String(value || "")
       .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
       .trim();
-    var cards = document.querySelectorAll(".product-card");
-    if (!cards.length) return;
-    var shown = 0;
-    cards.forEach(function (card) {
-      if (card.classList.contains("category-card") && !q) {
-        card.hidden = false;
-        shown += 1;
-        return;
+  }
+
+  function textMatchesQuery(text, query) {
+    var hay = normalizeSearch(text);
+    var q = normalizeSearch(query);
+    if (!q) return true;
+    if (hay.indexOf(q) !== -1) return true;
+    return q.split(/\s+/).every(function (part) {
+      return part && hay.indexOf(part) !== -1;
+    });
+  }
+
+  function categoryHaystack(item) {
+    return (
+      item.name +
+      " " +
+      (item.keywords || "") +
+      " " +
+      item.href.replace(/\.html$/i, " ").replace(/[-_]/g, " ")
+    );
+  }
+
+  function queryIsCategoryLevel(query, item) {
+    if (!item) return false;
+    var q = normalizeSearch(query);
+    if (!q) return false;
+    var name = normalizeSearch(item.name);
+    if (name === q || name.indexOf(q) !== -1) return true;
+    var file = normalizeSearch(item.href.replace(/\.html$/i, "").replace(/[-_]/g, " "));
+    return Boolean(file && (file === q || file.indexOf(q) !== -1));
+  }
+
+  function findCatalogMatch(query) {
+    var q = normalizeSearch(query);
+    if (!q) return null;
+    var items = flatCatalogItems();
+    var exact = items.find(function (item) {
+      return normalizeSearch(item.name) === q;
+    });
+    if (exact) return exact;
+    return (
+      items.find(function (item) {
+        return textMatchesQuery(categoryHaystack(item), q);
+      }) || null
+    );
+  }
+
+  function collectNamedProducts(node, out) {
+    if (Array.isArray(node)) {
+      node.forEach(function (item) {
+        if (item && item.title) {
+          out.push(item);
+          return;
+        }
+        if (item && typeof item === "object") collectNamedProducts(item, out);
+      });
+      return;
+    }
+    if (!node || typeof node !== "object") return;
+    Object.keys(node).forEach(function (key) {
+      if (key === "variants") return;
+      collectNamedProducts(node[key], out);
+    });
+  }
+
+  function catalogNameForPage(page) {
+    var match = flatCatalogItems().find(function (item) {
+      return item.href.toLowerCase() === String(page || "").toLowerCase();
+    });
+    return match ? match.name : String(page || "").replace(/\.html$/i, "");
+  }
+
+  var allProductsCache = null;
+
+  function indexAllProducts() {
+    if (allProductsCache) return allProductsCache;
+    var data = global.FracaGalleryData;
+    var list = [];
+    if (!data) return list;
+    Object.keys(GALLERY_PAGES).forEach(function (key) {
+      var page = GALLERY_PAGES[key];
+      var products = [];
+      collectNamedProducts(data[key], products);
+      products.forEach(function (item) {
+        var src =
+          item.src ||
+          (item.variants && item.variants[0] && item.variants[0].src) ||
+          "";
+        list.push({
+          title: item.title || "",
+          desc: item.desc || "",
+          price: item.price || "",
+          src: src,
+          page: page,
+          category: catalogNameForPage(page),
+        });
+      });
+    });
+    allProductsCache = list;
+    return list;
+  }
+
+  function scoreSearchHit(hit, query) {
+    var q = normalizeSearch(query);
+    var title = normalizeSearch(hit.title);
+    var category = normalizeSearch(hit.category);
+    if (title === q) return 100;
+    if (title.indexOf(q) === 0) return 90;
+    if (title.indexOf(q) !== -1) return 80;
+    if (category === q || category.indexOf(q) !== -1) return 65;
+    if (normalizeSearch(hit.desc).indexOf(q) !== -1) return 50;
+    return 30;
+  }
+
+  function searchAllProducts(query) {
+    var q = normalizeSearch(query);
+    if (q.length < 2) return [];
+    return indexAllProducts()
+      .filter(function (hit) {
+        return textMatchesQuery(
+          [hit.title, hit.desc, hit.price, hit.src, hit.category].join(" "),
+          q
+        );
+      })
+      .sort(function (a, b) {
+        return scoreSearchHit(b, q) - scoreSearchHit(a, q);
+      });
+  }
+
+  function uniqueHitPages(hits) {
+    var seen = {};
+    var pages = [];
+    hits.forEach(function (hit) {
+      var key = String(hit.page || "").toLowerCase();
+      if (!key || seen[key]) return;
+      seen[key] = true;
+      pages.push(hit.page);
+    });
+    return pages;
+  }
+
+  function productSearchHref(hit, query) {
+    var q = String(query || hit.title || "").trim();
+    return (
+      hit.page +
+      "?q=" +
+      encodeURIComponent(q) +
+      "#" +
+      slugifyId(hit.title)
+    );
+  }
+
+  function findProductPage(query) {
+    var hits = searchAllProducts(query);
+    return hits.length ? hits[0].page : null;
+  }
+
+  function cardSearchText(card) {
+    var parts = [];
+    card.querySelectorAll("h3, p, img").forEach(function (el) {
+      if (el.tagName === "IMG") {
+        parts.push(el.getAttribute("alt") || "");
+        parts.push(el.getAttribute("src") || "");
+      } else {
+        parts.push(el.textContent || "");
       }
-      var text = (
-        (card.querySelector("h3") && card.querySelector("h3").textContent) ||
-        ""
-      ).toLowerCase();
-      var match = !q || text.indexOf(q) !== -1;
+    });
+    parts.push(card.id || "");
+    return parts.join(" ");
+  }
+
+  function otherCategoryLinks(query, currentPage) {
+    var current = String(currentPage || currentCatalogFile()).toLowerCase();
+    var hits = searchAllProducts(query);
+    var pages = uniqueHitPages(hits).filter(function (page) {
+      return page.toLowerCase() !== current;
+    });
+    if (!pages.length) return "";
+    return pages
+      .map(function (page) {
+        var count = hits.filter(function (hit) {
+          return hit.page.toLowerCase() === page.toLowerCase();
+        }).length;
+        return (
+          '<a href="' +
+          escapeHtml(page + "?q=" + encodeURIComponent(query)) +
+          '">' +
+          escapeHtml(catalogNameForPage(page)) +
+          " (" +
+          count +
+          ")</a>"
+        );
+      })
+      .join(", ");
+  }
+
+  function updateSearchStatus(query, shown, filtering) {
+    var main = document.querySelector("main");
+    if (!main) return;
+    var el = document.getElementById("search-status");
+    if (!el) {
+      el = document.createElement("p");
+      el.id = "search-status";
+      el.className = "search-status";
+      main.insertBefore(el, main.firstChild);
+    }
+    if (!filtering) {
+      el.hidden = true;
+      el.textContent = "";
+      return;
+    }
+    el.hidden = false;
+    var label = shown === 1 ? "product" : "products";
+    var elsewhere = otherCategoryLinks(query, currentCatalogFile());
+    var clear =
+      ' <a href="' + escapeHtml(currentCatalogFile()) + '">Clear search</a>';
+    if (shown > 0) {
+      el.innerHTML =
+        "Showing " +
+        shown +
+        " " +
+        label +
+        " for “" +
+        escapeHtml(query) +
+        "” on this page." +
+        (elsewhere ? " Also in " + elsewhere + "." : "") +
+        clear;
+      return;
+    }
+    el.innerHTML = elsewhere
+      ? "No products on this page matched “" +
+        escapeHtml(query) +
+        "”. See " +
+        elsewhere +
+        "." +
+        clear
+      : "No products matched “" +
+        escapeHtml(query) +
+        "”." +
+        clear;
+  }
+
+  function applyProductCardFilter(query) {
+    var q = String(query || "").trim();
+    var cards = document.querySelectorAll(".product-card");
+    var categoryItem = currentCatalogItem();
+    var categoryQuery = queryIsCategoryLevel(q, categoryItem);
+    var filtering = Boolean(q) && !categoryQuery;
+    var shown = 0;
+
+    cards.forEach(function (card) {
+      var match = !filtering || textMatchesQuery(cardSearchText(card), q);
       card.hidden = !match;
       if (match) shown += 1;
     });
+
+    document.querySelectorAll("main section").forEach(function (section) {
+      var sectionCards = section.querySelectorAll(".product-card");
+      if (!sectionCards.length) {
+        section.hidden = false;
+        return;
+      }
+      var visible = Array.prototype.some.call(sectionCards, function (card) {
+        return !card.hidden;
+      });
+      section.hidden = filtering && !visible;
+    });
+
     var empty = document.getElementById("search-empty");
-    if (empty) empty.hidden = shown > 0 || !q;
+    if (empty) empty.hidden = shown > 0 || !filtering;
+    updateSearchStatus(q, shown, filtering);
+    return shown;
   }
 
   function initSiteSearch() {
@@ -416,6 +698,7 @@
       "</button>" +
       '<div class="browse-menu__panel" id="browse-categories-panel" hidden></div>' +
       "</div>" +
+      '<div class="site-search-wrap">' +
       '<form class="site-search" id="site-search-form" role="search" action="furniture.html" method="get">' +
       '<label class="sr-only" for="site-search-input">Search products</label>' +
       '<input type="search" id="site-search-input" name="q" placeholder="Search for products…" autocomplete="off">' +
@@ -427,6 +710,8 @@
       '<i data-lucide="search" class="w-4 h-4" aria-hidden="true"></i>' +
       "</button>" +
       "</form>" +
+      '<div class="site-search-results" id="site-search-results" hidden></div>' +
+      "</div>" +
       "</div>";
 
     header.appendChild(tools);
@@ -472,15 +757,22 @@
       else closeBrowse();
     });
     document.addEventListener("click", function (e) {
-      if (!tools.contains(e.target)) closeBrowse();
+      if (!tools.contains(e.target)) {
+        closeBrowse();
+        hideSearchResults();
+      }
     });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeBrowse();
+      if (e.key === "Escape") {
+        closeBrowse();
+        hideSearchResults();
+      }
     });
 
     var params = new URLSearchParams(global.location.search || "");
     var initialQ = params.get("q") || "";
     var input = tools.querySelector("#site-search-input");
+    var resultsBox = tools.querySelector("#site-search-results");
     if (initialQ) input.value = initialQ;
 
     var path = String((global.location && location.pathname) || "");
@@ -492,27 +784,112 @@
       }
     });
 
+    function hideSearchResults() {
+      if (!resultsBox) return;
+      resultsBox.hidden = true;
+      resultsBox.innerHTML = "";
+    }
+
+    function renderSearchResults(query) {
+      if (!resultsBox) return;
+      var hits = searchAllProducts(query);
+      if (!String(query || "").trim() || hits.length === 0) {
+        hideSearchResults();
+        return;
+      }
+      var html =
+        '<p class="site-search-results__label">Matches across the catalogue</p><ul>';
+      hits.slice(0, 8).forEach(function (hit) {
+        var thumb = hit.src
+          ? '<img src="' +
+            escapeHtml(encodeImagePath(hit.src)) +
+            '" alt="" width="48" height="48">'
+          : "";
+        html +=
+          '<li><a href="' +
+          escapeHtml(productSearchHref(hit, query)) +
+          '">' +
+          thumb +
+          "<span><strong>" +
+          escapeHtml(hit.title || "Product") +
+          "</strong><em>" +
+          escapeHtml(hit.category) +
+          (hit.price ? " · " + escapeHtml(hit.price) : "") +
+          "</em></span></a></li>";
+      });
+      html += "</ul>";
+      if (hits.length > 8) {
+        html +=
+          '<p class="site-search-results__more">' +
+          (hits.length - 8) +
+          " more matches — press Search to open the best page</p>";
+      }
+      resultsBox.innerHTML = html;
+      resultsBox.hidden = false;
+    }
+
+    function searchDestination(q, selectedHref) {
+      if (!q) return selectedHref || "furniture.html";
+      var hits = searchAllProducts(q);
+      var selectedItem = selectedHref
+        ? flatCatalogItems().find(function (item) {
+            return item.href === selectedHref;
+          })
+        : null;
+      if (selectedItem && queryIsCategoryLevel(q, selectedItem)) {
+        return selectedHref;
+      }
+      var category = findCatalogMatch(q);
+      if (category && queryIsCategoryLevel(q, category) && !selectedHref) {
+        return category.href;
+      }
+      var selectedHits = selectedHref
+        ? hits.filter(function (hit) {
+            return hit.page.toLowerCase() === selectedHref.toLowerCase();
+          })
+        : [];
+      if (selectedHref && selectedHits.length) {
+        return selectedHref + "?q=" + encodeURIComponent(q);
+      }
+      if (hits.length) {
+        return hits[0].page + "?q=" + encodeURIComponent(q);
+      }
+      if (category) {
+        return (
+          category.href +
+          (queryIsCategoryLevel(q, category) ? "" : "?q=" + encodeURIComponent(q))
+        );
+      }
+      return (selectedHref || "furniture.html") + "?q=" + encodeURIComponent(q);
+    }
+
     tools.querySelector("#site-search-form").addEventListener("submit", function (e) {
       e.preventDefault();
       var q = input.value.trim();
-      var href = select.value;
-      if (href) {
-        global.location.href = href + (q ? "?q=" + encodeURIComponent(q) : "");
-        return;
-      }
-      var match = findCatalogMatch(q);
-      if (match) {
-        global.location.href = match.href + (q ? "?q=" + encodeURIComponent(q) : "");
-        return;
-      }
-      global.location.href = "furniture.html" + (q ? "?q=" + encodeURIComponent(q) : "");
+      hideSearchResults();
+      global.location.href = searchDestination(q, select.value);
     });
 
     input.addEventListener("input", function () {
       applyProductCardFilter(input.value);
+      renderSearchResults(input.value);
     });
 
-    applyProductCardFilter(initialQ);
+    input.addEventListener("focus", function () {
+      if (input.value.trim().length >= 2) renderSearchResults(input.value);
+    });
+
+    var localShown = applyProductCardFilter(initialQ);
+    if (initialQ && !queryIsCategoryLevel(initialQ, currentCatalogItem()) && localShown === 0) {
+      var elsewhere = uniqueHitPages(searchAllProducts(initialQ)).filter(function (page) {
+        return page.toLowerCase() !== currentCatalogFile().toLowerCase();
+      });
+      if (elsewhere.length) {
+        global.location.replace(elsewhere[0] + "?q=" + encodeURIComponent(initialQ));
+        return;
+      }
+    }
+
     createIcons();
   }
 
