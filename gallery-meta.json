@@ -1,28 +1,28 @@
 {
     "bags":  {
                  "title":  "Bags",
-                 "hero":  "IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-1.png",
+                 "hero":  "IMAGES/BAGS/TRAVELLING BAGS/FOS-Travel-Bag.png",
                  "folder":  "BAGS",
                  "page":  "Bags.html",
                  "count":  36
              },
     "sofaSets":  {
                      "title":  "Sofa Sets",
-                     "hero":  "IMAGES/SOFA SETS/Sofa-1.png",
+                     "hero":  "IMAGES/SOFA SETS/Cream-channel-tufted-set.png",
                      "folder":  "SOFA SETS",
                      "page":  "Sofa-sets.html",
                      "count":  10
                  },
     "restaurantSeats":  {
                             "title":  "Restaurant Seats",
-                            "hero":  "IMAGES/RESTAURANT SEATS/Seat-1.png",
+                            "hero":  "IMAGES/RESTAURANT SEATS/Lime-wood-frame-armchair.png",
                             "folder":  "RESTAURANT SEATS",
                             "page":  "Restaurant-seats.html",
                             "count":  3
                         },
     "diningSets":  {
                        "title":  "Dining Sets",
-                       "hero":  "IMAGES/DINING SETS/Dining-Set-50.png",
+                       "hero":  "IMAGES/DINING SETS/Glass-top-six-seater.png",
                        "folder":  "DINING SETS",
                        "page":  "Dining-sets.html",
                        "count":  55
@@ -31,30 +31,30 @@
                             "title":  "Executive Chairs",
                             "hero":  {
                                          "value":  [
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-1.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-2.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-3.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-4.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-5.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-6.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-7.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-8.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-9.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-10.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-11.png",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-12.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-13.jpg",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-14.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-15.png",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-16.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-17.jpg",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-18.jpg",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-19.jpg",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-20.JPG",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-21.png",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-22.png",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-23.png",
-                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chair-24.png"
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Quilted-high-back-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Perforated-high-back-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Diamond-tufted-executive-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Mahogany-V-arm-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Grey-fabric-high-back-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Padded-arm-high-back-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Wing-arm-tufted-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Chrome-wood-cap-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Z-arm-quilted-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Gloss-tufted-high-back.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Panelled-wood-arm-chair.png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Brown-quilted-executive-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Panel-arm-executive-chair.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Teal-quilted-high-back-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Black-mesh-executive-chair.png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Segmented-black-high-back.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Tan-perforated-executive-chair.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Perforated-loop-arm-chair.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Button-quilt-executive-chair.jpg",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Grey-wood-arm-chair.JPG",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Cream-tufted-high-back-chair.png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Angular-arm-high-back-chair.png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Ribbed-wood-pad-chair.png",
+                                                       "IMAGES/EXECUTIVE CHAIRS/SENIOR EXECUTIVE HIGH BACK CHAIRS/Wood-cap-high-back-chair.png"
                                                    ],
                                          "Count":  24
                                      },
@@ -64,21 +64,21 @@
                         },
     "dressingMirrors":  {
                             "title":  "Dressing Mirrors",
-                            "hero":  "IMAGES/DRESSING MIRRORS/Mirror-12.png",
+                            "hero":  "IMAGES/DRESSING MIRRORS/Four-drawer-dressing-chest.png",
                             "folder":  "DRESSING MIRRORS",
                             "page":  "Dressing-mirrors.html",
                             "count":  14
                         },
     "filingCabinets":  {
                            "title":  "Filing Cabinets",
-                           "hero":  "IMAGES/FILING CABINETS/Cabinet-1.png",
+                           "hero":  "IMAGES/FILING CABINETS/Twenty-door-staff-locker.png",
                            "folder":  "FILING CABINETS",
                            "page":  "Filing-cabinets.html",
                            "count":  11
                        },
     "pedestalDesks":  {
                           "title":  "Pedestal Desks",
-                          "hero":  "IMAGES/PEDESTAL DESKS/Pedestal-Desk-1.png",
+                          "hero":  "IMAGES/PEDESTAL DESKS/L-shaped-pedestal-desk.png",
                           "folder":  "PEDESTAL DESKS",
                           "page":  "Pedestal-desks.html",
                           "count":  5
@@ -99,35 +99,35 @@
                 },
     "storageSafes":  {
                          "title":  "Storage Safes",
-                         "hero":  "IMAGES/STORAGE SAFES/Safe-1.png",
+                         "hero":  "IMAGES/STORAGE SAFES/Digital-fingerprint-safe.png",
                          "folder":  "STORAGE SAFES",
                          "page":  "Storage-safes.html",
                          "count":  4
                      },
     "beds":  {
                  "title":  "Beds",
-                 "hero":  "IMAGES/EXECUTIVE BEDS/Bed-39.png",
+                 "hero":  "IMAGES/EXECUTIVE BEDS/Slatted-storage-bed.png",
                  "folder":  "EXECUTIVE BEDS",
                  "page":  "Beds.html",
                  "count":  28
              },
     "receptionDesks":  {
                            "title":  "Reception Desks",
-                           "hero":  "IMAGES/RECEPTION DESKS/Reception-Desk-3.png",
+                           "hero":  "IMAGES/RECEPTION DESKS/Curved-maple-reception-desk.png",
                            "folder":  "RECEPTION DESKS",
                            "page":  "Reception-desks.html",
                            "count":  3
                        },
     "studentSets":  {
                         "title":  "Student Desks",
-                        "hero":  "IMAGES/STUDENTS SETS/Student-Desk-1.jpeg",
+                        "hero":  "IMAGES/STUDENTS SETS/Combo-school-desk.png",
                         "folder":  "STUDENTS SETS",
                         "page":  "Student-desks.html",
                         "count":  4
                     },
     "churchFurniture":  {
                             "title":  "Church Furniture",
-                            "hero":  "IMAGES/CHURCH FURNITURE/PEWS/Pew-1.png",
+                            "hero":  "IMAGES/CHURCH FURNITURE/PEWS/Cherry-pew-with-kneeler.png",
                             "folder":  "CHURCH FURNITURE",
                             "page":  "Church-furniture.html",
                             "count":  55,
@@ -139,98 +139,98 @@
                         },
     "coatHangers":  {
                         "title":  "Coat Hangers",
-                        "hero":  "IMAGES/COAT HANGERS/Coat-Hanger-1.png",
+                        "hero":  "IMAGES/COAT HANGERS/Rack-and-bench-stand.png",
                         "folder":  "COAT HANGERS",
                         "page":  "Coat-hangers.html",
                         "count":  2
                     },
     "executiveOfficeDesks":  {
                                  "title":  "Executive Office Desks",
-                                 "hero":  "IMAGES/EXECUTIVE OFFICE DESKS/Desk-1.png",
+                                 "hero":  "IMAGES/EXECUTIVE OFFICE DESKS/Mahogany-executive-desk.png",
                                  "folder":  "EXECUTIVE OFFICE DESKS",
                                  "page":  "Executive-tables.html",
-                                 "count":  23
+                                 "count":  22
                              },
     "conferenceTables":  {
                              "title":  "Conference Tables",
-                             "hero":  "IMAGES/CONFERENCE TABLES/Conference-Table-1.png",
+                             "hero":  "IMAGES/CONFERENCE TABLES/Boat-shaped-boardroom-table.png",
                              "folder":  "CONFERENCE TABLES",
                              "page":  "Conference-tables.html",
                              "count":  9
                          },
     "officeChairs":  {
                          "title":  "Office Chairs",
-                         "hero":  "IMAGES/OFFICE CHAIRS/Office-Chair-1.png",
+                         "hero":  "IMAGES/OFFICE CHAIRS/Lime-mesh-task-chair.png",
                          "folder":  "OFFICE CHAIRS",
                          "page":  "Office-chairs.html",
                          "count":  33
                      },
     "catalinaChairs":  {
                            "title":  "Catalina Chairs",
-                           "hero":  "IMAGES/CATALINA CHAIRS/Catalina-Chair-1.png",
+                           "hero":  "IMAGES/CATALINA CHAIRS/Tan-industrial-armchair.png",
                            "folder":  "CATALINA CHAIRS",
                            "page":  "Catalina-chairs.html",
                            "count":  5
                        },
     "wardrobes":  {
                       "title":  "Wardrobes",
-                      "hero":  "IMAGES/WARDROBES/Wardrobe-26.png",
+                      "hero":  "IMAGES/WARDROBES/Three-door-mirrored-wardrobe.png",
                       "folder":  "WARDROBES",
                       "page":  "Wardrobes.html",
                       "count":  33
                   },
     "workStations":  {
                          "title":  "Workstations",
-                         "hero":  "IMAGES/WORK STATIONS/Workstation-1.png",
+                         "hero":  "IMAGES/WORK STATIONS/Four-person-cluster-desk.png",
                          "folder":  "WORK STATIONS",
                          "page":  "Workstations.html",
                          "count":  4
                      },
     "coffeeTables":  {
                          "title":  "Coffee Tables",
-                         "hero":  "IMAGES/COFFEE TABLES/Coffee-Table-21.png",
+                         "hero":  "IMAGES/COFFEE TABLES/Scalloped-nesting-tables.png",
                          "folder":  "COFFEE TABLES",
                          "page":  "Coffee-tables.html",
                          "count":  22
                      },
     "libraryShelves":  {
                            "title":  "Library \u0026 Supermarket Shelves",
-                           "hero":  "IMAGES/LIBRARY \u0026 SUPERMARKET SHELVES/Shelf-1.png",
+                           "hero":  "IMAGES/LIBRARY \u0026 SUPERMARKET SHELVES/Red-and-black-display-shelf.png",
                            "folder":  "LIBRARY \u0026 SUPERMARKET SHELVES",
                            "page":  "Library-shelves.html",
                            "count":  8
                        },
     "visitorsBoardroomChairs":  {
                                     "title":  "Visitors \u0026 Boardroom Chairs",
-                                    "hero":  "IMAGES/VISITORS \u0026 BOARDROOM CHAIRS/Chair-1.png",
+                                    "hero":  "IMAGES/VISITORS \u0026 BOARDROOM CHAIRS/Cantilever-guest-chair.png",
                                     "folder":  "VISITORS \u0026 BOARDROOM CHAIRS",
                                     "page":  "Visitors-boardroom-chairs.html",
                                     "count":  16
                                 },
     "entertainmentUnits":  {
                                "title":  "Entertainment Units",
-                               "hero":  "IMAGES/ENTERTAINMENT UNITS/Entertainment-Unit-1.png",
+                               "hero":  "IMAGES/ENTERTAINMENT UNITS/Two-tone-TV-cabinet.png",
                                "folder":  "ENTERTAINMENT UNITS",
                                "page":  "Entertainment-units.html",
                                "count":  3
                            },
     "conferenceChairs":  {
                              "title":  "Conference Chairs",
-                             "hero":  "IMAGES/CONFERENCE CHAIRS/Conference-Chair-1.png",
+                             "hero":  "IMAGES/CONFERENCE CHAIRS/Red-banquet-chair.png",
                              "folder":  "CONFERENCE CHAIRS",
                              "page":  "Conference-chairs.html",
                              "count":  5
                          },
     "linkChairs":  {
                        "title":  "Link Chairs",
-                       "hero":  "IMAGES/LINK CHAIRS/Link-Chair-1.png",
+                       "hero":  "IMAGES/LINK CHAIRS/Navy-wood-frame-bench.png",
                        "folder":  "LINK CHAIRS",
                        "page":  "Link-chairs.html",
                        "count":  7
                    },
     "shoeRacks":  {
                       "title":  "Shoe Racks",
-                      "hero":  "IMAGES/Shoe Racks/Shoe-Rack-1.jpg",
+                      "hero":  "IMAGES/Shoe Racks/Bamboo-six-tier-rack.jpg",
                       "folder":  "Shoe Racks",
                       "page":  "Shoe-racks.html",
                       "count":  6

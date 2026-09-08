@@ -588,6 +588,7 @@
       '<div class="lightbox__info">' +
       '<h3 id="lightbox-title" class="lightbox__title"></h3>' +
       '<p id="lightbox-desc" class="lightbox__desc"></p>' +
+      '<p id="lightbox-price" class="lightbox__price"></p>' +
       '<div class="lightbox__actions">' +
       '<a id="lightbox-inquire" class="product-card__inquire lightbox__inquire" href="#" target="_blank" rel="noopener noreferrer">' +
       WA_GLYPH +
@@ -606,6 +607,7 @@
     var lbImg = document.getElementById("lightbox-img");
     var lbTitle = document.getElementById("lightbox-title");
     var lbDesc = document.getElementById("lightbox-desc");
+    var lbPrice = document.getElementById("lightbox-price");
     var lbSwatches = document.getElementById("lightbox-swatches");
     var lbInquire = document.getElementById("lightbox-inquire");
     var lbContact = document.getElementById("lightbox-contact");
@@ -618,6 +620,10 @@
       if (lbImg) lbImg.src = "";
       if (lbTitle) lbTitle.textContent = "";
       if (lbDesc) lbDesc.textContent = "";
+      if (lbPrice) {
+        lbPrice.textContent = "";
+        lbPrice.hidden = true;
+      }
       if (lbSwatches) lbSwatches.innerHTML = "";
       activeDetail = null;
     }
@@ -635,6 +641,10 @@
       if (lbDesc) {
         lbDesc.textContent =
           activeDetail.desc || "Ask us for specs, finishes and pricing.";
+      }
+      if (lbPrice) {
+        lbPrice.textContent = activeDetail.price || "";
+        lbPrice.hidden = !activeDetail.price;
       }
       if (lbInquire) {
         lbInquire.href = inquireUrl(
@@ -673,6 +683,7 @@
       activeDetail = {
         title: detail.title || "Product",
         desc: (detail.desc || "").trim(),
+        price: String(detail.price || "").trim(),
         categoryLabel: detail.categoryLabel || "Product",
         productUrl: detail.productUrl || "",
         variants: detail.variants && detail.variants.length
@@ -716,6 +727,13 @@
       return item;
     });
 
+    // Show photos we have already vetted for sharpness and camera angle first.
+    list.sort(function (a, b) {
+      var ad = (a.desc || "").trim() ? 0 : 1;
+      var bd = (b.desc || "").trim() ? 0 : 1;
+      return ad - bd;
+    });
+
     var emptySel = options.emptySelector;
     var emptyEl = emptySel ? document.querySelector(emptySel) : null;
 
@@ -731,6 +749,7 @@
       var label = options.categoryLabel || "Product";
       var title = humanizeProductTitle(item.title, label, index);
       var desc = (item.desc || "").trim();
+      var price = String(item.price || "").trim();
       var variants = normalizeVariants(item);
       if (!variants.length) return;
 
@@ -756,6 +775,7 @@
         escapeHtml(title) +
         "</h3>" +
         (desc ? "<p>" + escapeHtml(desc) + "</p>" : "") +
+        (price ? '<p class="product-card__price">' + escapeHtml(price) + "</p>" : "") +
         '<a class="product-card__inquire" href="' +
         wa.replace(/"/g, "&quot;") +
         '" target="_blank" rel="noopener noreferrer" aria-label="Inquire about ' +
@@ -800,6 +820,7 @@
         global.FracaLightbox.open({
           title: title,
           desc: desc,
+          price: price,
           categoryLabel: label,
           productUrl: productUrl,
           variants: variants,
