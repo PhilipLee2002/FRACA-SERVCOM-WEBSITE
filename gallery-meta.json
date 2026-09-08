@@ -1,10 +1,10 @@
-﻿{
+{
     "bags":  {
                  "title":  "Bags",
                  "hero":  "IMAGES/BAGS/TRAVELLING BAGS/travelling-bag-1.png",
                  "folder":  "BAGS",
                  "page":  "Bags.html",
-                 "count":  42
+                 "count":  36
              },
     "sofaSets":  {
                      "title":  "Sofa Sets",
@@ -20,13 +20,6 @@
                             "page":  "Restaurant-seats.html",
                             "count":  3
                         },
-    "churchAssemblyChairs":  {
-                                 "title":  "Church \u0026 Assembly Chairs",
-                                 "hero":  "IMAGES/CHURCH \u0026 ASSEMBLY CHAIRS/Chair-1.png",
-                                 "folder":  "CHURCH \u0026 ASSEMBLY CHAIRS",
-                                 "page":  "Church-assembly-chairs.html",
-                                 "count":  2
-                             },
     "diningSets":  {
                        "title":  "Dining Sets",
                        "hero":  "IMAGES/DINING SETS/Dining-Set-50.png",
@@ -116,15 +109,8 @@
                  "hero":  "IMAGES/EXECUTIVE BEDS/Bed-39.png",
                  "folder":  "EXECUTIVE BEDS",
                  "page":  "Beds.html",
-                 "count":  44
+                 "count":  28
              },
-    "utilityChairs":  {
-                          "title":  "Utility Chairs",
-                          "hero":  "IMAGES/UTILITY CHAIRS/Chair-1.JPG",
-                          "folder":  "UTILITY CHAIRS",
-                          "page":  "Utility-chairs.html",
-                          "count":  37
-                      },
     "receptionDesks":  {
                            "title":  "Reception Desks",
                            "hero":  "IMAGES/RECEPTION DESKS/Reception-Desk-3.png",
@@ -137,14 +123,19 @@
                         "hero":  "IMAGES/STUDENTS SETS/Student-Desk-1.jpeg",
                         "folder":  "STUDENTS SETS",
                         "page":  "Student-desks.html",
-                        "count":  5
+                        "count":  4
                     },
     "churchFurniture":  {
                             "title":  "Church Furniture",
-                            "hero":  "IMAGES/CHURCH FURNITURE/Church-Furniture-1.png",
+                            "hero":  "IMAGES/CHURCH FURNITURE/PEWS/Pew-1.png",
                             "folder":  "CHURCH FURNITURE",
                             "page":  "Church-furniture.html",
-                            "count":  19
+                            "count":  55,
+                            "sections":  {
+                                             "chairs":  39,
+                                             "pews":  2,
+                                             "pulpits":  14
+                                         }
                         },
     "coatHangers":  {
                         "title":  "Coat Hangers",
@@ -193,7 +184,7 @@
                          "hero":  "IMAGES/WORK STATIONS/Workstation-1.png",
                          "folder":  "WORK STATIONS",
                          "page":  "Workstations.html",
-                         "count":  5
+                         "count":  4
                      },
     "coffeeTables":  {
                          "title":  "Coffee Tables",

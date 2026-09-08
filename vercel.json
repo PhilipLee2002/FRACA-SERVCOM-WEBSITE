@@ -9,6 +9,16 @@
       "permanent": true
     },
     {
+      "source": "/Church-assembly-chairs",
+      "destination": "/Church-furniture",
+      "permanent": true
+    },
+    {
+      "source": "/Utility-chairs",
+      "destination": "/Church-furniture",
+      "permanent": true
+    },
+    {
       "source": "/Computer-workstations",
       "destination": "/furniture",
       "permanent": true
