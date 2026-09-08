@@ -650,13 +650,26 @@
         clear;
   }
 
+  function galleryProductCards() {
+    return document.querySelectorAll(".product-card--item");
+  }
+
   function applyProductCardFilter(query) {
     var q = String(query || "").trim();
-    var cards = document.querySelectorAll(".product-card");
+    var cards = galleryProductCards();
     var categoryItem = currentCatalogItem();
     var categoryQuery = queryIsCategoryLevel(q, categoryItem);
     var filtering = Boolean(q) && !categoryQuery;
     var shown = 0;
+
+    if (!cards.length) {
+      var status = document.getElementById("search-status");
+      if (status) {
+        status.hidden = true;
+        status.textContent = "";
+      }
+      return 0;
+    }
 
     cards.forEach(function (card) {
       var match = !filtering || textMatchesQuery(cardSearchText(card), q);
@@ -879,17 +892,7 @@
       if (input.value.trim().length >= 2) renderSearchResults(input.value);
     });
 
-    var localShown = applyProductCardFilter(initialQ);
-    if (initialQ && !queryIsCategoryLevel(initialQ, currentCatalogItem()) && localShown === 0) {
-      var elsewhere = uniqueHitPages(searchAllProducts(initialQ)).filter(function (page) {
-        return page.toLowerCase() !== currentCatalogFile().toLowerCase();
-      });
-      if (elsewhere.length) {
-        global.location.replace(elsewhere[0] + "?q=" + encodeURIComponent(initialQ));
-        return;
-      }
-    }
-
+    applyProductCardFilter(initialQ);
     createIcons();
   }
 
@@ -1136,7 +1139,7 @@
       var productUrl = productShareUrl(anchorId);
       var wa = inquireUrl(title, label, productUrl);
       var card = document.createElement("div");
-      card.className = "product-card reveal";
+      card.className = "product-card product-card--item reveal";
       card.id = anchorId;
       card.innerHTML =
         '<div class="product-card__media">' +
