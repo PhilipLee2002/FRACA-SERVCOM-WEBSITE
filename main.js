@@ -1154,7 +1154,7 @@
         "<h3>" +
         escapeHtml(title) +
         "</h3>" +
-        (desc ? "<p>" + escapeHtml(desc) + "</p>" : "") +
+        (desc ? '<p class="product-card__desc">' + escapeHtml(desc) + "</p>" : "") +
         (price ? '<p class="product-card__price">' + escapeHtml(price) + "</p>" : "") +
         '<a class="product-card__inquire" href="' +
         wa.replace(/"/g, "&quot;") +
@@ -1322,7 +1322,30 @@
     });
   }
 
+  function markPageSection() {
+    var file = currentCatalogFile().toLowerCase();
+    var body = document.body;
+    if (!body) return;
+    if (file === "index.html" || file === "") {
+      body.classList.add("page-home");
+      return;
+    }
+    if (file === "bags.html") {
+      body.classList.add("page-bags");
+      return;
+    }
+    if (file === "furniture.html") {
+      body.classList.add("page-products");
+      return;
+    }
+    var isCatalog = Object.keys(GALLERY_PAGES).some(function (key) {
+      return String(GALLERY_PAGES[key] || "").toLowerCase() === file;
+    });
+    if (isCatalog) body.classList.add("page-catalog", "page-furniture");
+  }
+
   function init() {
+    markPageSection();
     initTheme();
     createIcons();
     initNav();
